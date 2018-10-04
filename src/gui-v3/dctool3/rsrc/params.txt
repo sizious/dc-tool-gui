@@ -1,0 +1,14 @@
+dctool3 "%1" :
+ - Si preset    : identification de l'operation, si upload, le faire + exec.
+ - Si BIN/ELF 	: Upload & Execute.
+
+dctool "%1" /d
+ - Si preset 	: verification du fichier puis appli du download.
+ - Si BIN/ELF 	: lancement du download avec ce fichier : mais params suppl :
+		  * /a address /s size
+
+dctool "%1" /noexec
+ - Si preset	: identification de l'operation, si upload, le faire.
+ - Si ELF/BIN	: upload simple.
+
+/prompt : ouvre la boite correspondante avant de lancer le truc !

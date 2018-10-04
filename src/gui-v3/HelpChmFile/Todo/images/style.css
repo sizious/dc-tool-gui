@@ -1,0 +1,37 @@
+a:hover {
+	color: #9900CC;
+	text-decoration: underline overline;
+	border: none;
+
+}
+a:link {
+	color: #0099FF;
+	text-decoration: underline;
+
+}
+a:visited {
+	color: #CC99FF;
+	text-decoration: underline;
+
+}
+a:active {
+	color: #FF0000;
+	text-decoration: underline overline;
+}
+
+BODY{ 
+/* la couleur principale (face) */ 
+scrollbar-face-color:#0000A0;
+/* la couleur des fleches */ 
+scrollbar-arrow-color:#FFFFFF;
+/* la couleur de fond (entre le curseur et la fleche) */ 
+scrollbar-track-color:#0000A0;
+/* la couleur claire (haut+gauche) */ 
+scrollbar-highlight-color:#CCCCCC;
+/* la couleur claire 2 (haut+gauche) */ 
+scrollbar-3dlight-color:#FFFFFF;
+/* la couleur foncee (bas+droite) */ 
+scrollbar-shadow-color:#000000
+/* la couleur foncee 2 (bas+droite) */ 
+scrollbar-darkshadow-color:#999999;
+} 

@@ -1,0 +1,160 @@
+[FileVersion]
+Version=7.0
+[Compiler]
+A=8
+B=0
+C=1
+D=1
+E=0
+F=0
+G=1
+H=1
+I=1
+J=0
+K=0
+L=1
+M=0
+N=1
+O=1
+P=1
+Q=0
+R=0
+S=0
+T=0
+U=0
+V=1
+W=0
+X=1
+Y=1
+Z=1
+ShowHints=1
+ShowWarnings=1
+UnitAliases=WinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE;
+NamespacePrefix=
+SymbolDeprecated=1
+SymbolLibrary=1
+SymbolPlatform=1
+UnitLibrary=1
+UnitPlatform=1
+UnitDeprecated=1
+HResultCompat=1
+HidingMember=1
+HiddenVirtual=1
+Garbage=1
+BoundsError=1
+ZeroNilCompat=1
+StringConstTruncated=1
+ForLoopVarVarPar=1
+TypedConstVarPar=1
+AsgToTypedConst=1
+CaseLabelRange=1
+ForVariable=1
+ConstructingAbstract=1
+ComparisonFalse=1
+ComparisonTrue=1
+ComparingSignedUnsigned=1
+CombiningSignedUnsigned=1
+UnsupportedConstruct=1
+FileOpen=1
+FileOpenUnitSrc=1
+BadGlobalSymbol=1
+DuplicateConstructorDestructor=1
+InvalidDirective=1
+PackageNoLink=1
+PackageThreadVar=1
+ImplicitImport=1
+HPPEMITIgnored=1
+NoRetVal=1
+UseBeforeDef=1
+ForLoopVarUndef=1
+UnitNameMismatch=1
+NoCFGFileFound=1
+MessageDirective=1
+ImplicitVariants=1
+UnicodeToLocale=1
+LocaleToUnicode=1
+ImagebaseMultiple=1
+SuspiciousTypecast=1
+PrivatePropAccessor=1
+UnsafeType=0
+UnsafeCode=0
+UnsafeCast=0
+[Linker]
+MapFile=0
+OutputObjs=0
+ConsoleApp=1
+DebugInfo=0
+RemoteSymbols=0
+MinStackSize=16384
+MaxStackSize=1048576
+ImageBase=4194304
+ExeDescription=
+[Directories]
+OutputDir=.\bin
+UnitOutputDir=.\Units
+PackageDLLOutputDir=
+PackageDCPOutputDir=
+SearchPath=
+Packages=vcl;rtl;vclx;indy;inet;xmlrtl;vclie;inetdbbde;inetdbxpress;dbrtl;vcldb;soaprtl;VclSmp;dbexpress;dbxcds;inetdb;bdertl;webdsnap;websnap;visualclx;visualdbclx;vclactnband;vclshlctrls;dclOfficeXP;TImgButton
+Conditionals=
+DebugSourceDirs=
+UsePackages=0
+[Parameters]
+RunParams=
+HostApplication=
+Launcher=
+UseLauncher=0
+DebugCWD=
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=F:\Program Files\Borland\Delphi7\Bin\
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=0
+MajorVer=3
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1036
+CodePage=1252
+[Version Info Keys]
+CompanyName=Created by [big_fury]SiZiOUS
+FileDescription=DC-TOOL GUI - Version 3.0 - by [big_fury]SiZiOUS
+FileVersion=3.0.0.0
+InternalName=dctool3.exe
+LegalCopyright=© Copyright 2002-2005
+LegalTrademarks=
+OriginalFilename=dctool3.exe
+ProductName=DC-TOOL GUI 3
+ProductVersion=3.0.0.0
+Comments=http://sbibuilder.shorturl.com/
+[Excluded Packages]
+f:\program files\borland\delphi7\Bin\dclmcn70.bpl=Composants Connexion DataSnap Borland
+F:\Program Files\Borland\Delphi7\Bin\dclmid70.bpl=Composants MyBase DataAccess Borland
+F:\Program Files\Borland\Delphi7\Bin\dcldb70.bpl=Composants Base de données Borland
+f:\program files\borland\delphi7\Bin\dclado70.bpl=Composants DB ADO Borland
+f:\program files\borland\delphi7\Bin\dclbde70.bpl=Composants BD BDE Borland
+f:\program files\borland\delphi7\Bin\DCLIB70.bpl=Composants Accès données InterBase
+f:\program files\borland\delphi7\Bin\dcltee70.bpl=Composants TeeChart
+f:\program files\borland\delphi7\Bin\dcldss70.bpl=Composants Decision Cube Borland
+f:\program files\borland\delphi7\Bin\dclclxdb70.bpl=Composants BD CLX Borland
+F:\Program Files\Borland\Delphi7\Projects\Bpl\JvBDED7D.bpl=JVCL BDE Components
+F:\Program Files\Borland\Delphi7\Projects\Bpl\JvDBD7D.bpl=JVCL Database Components
+[HistoryLists\hlConditionals]
+Count=1
+Item0=DEBUG
+[HistoryLists\hlUnitAliases]
+Count=1
+Item0=WinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE;
+[HistoryLists\hlUnitOutputDirectory]
+Count=1
+Item0=.\Units
+[HistoryLists\hlOutputDirectorry]
+Count=1
+Item0=.\bin

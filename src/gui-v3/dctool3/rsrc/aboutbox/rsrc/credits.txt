@@ -1,0 +1,70 @@
+DC-TOOL GUI 3
+©reated in 2002-2005
+by [big_fury]SiZiOUS
+http://sbibuilder.shorturl.com/
+
+"What ? Huh ? Dreamcast dead ? Are you talking to me ? ^^"
+
+This's the new version of DC-TOOL GUI !
+I hope you think it useful for your Dreamcast developpements.
+
+Alpha testers :
+JMD, dcprogfr, speud, Ron, Omer, Rom1, mixman
+
+Greetings go to :
+
+Thanks to ADK for the original DC-TOOL.' + crlf+' '
+     
+Logo creators :
+hieronymus for the draw and Djizeuss for the colorization. 
+SevLila je compte sur toi ^^
+      
+French Dreamcast Scene : 
+Including DCReload, DC-FRANCE...
+JMD, L@ Cible, dcprogfr, erwan, diwee, oggy, Pingouindream, Christluu, patbier, Poche, telliam, 
+olivier, cédric, speud, Deadly-Skies, Semicolo, mixman, evilcyril, yoann007, shikigami, lekteur, 
+Sakuragi, escargot, Man-Jimaru, Kurdy, edd, hieronymus, Djizeuss, Venom, SevLila, Codex, bendermike, 
+MexNin, yngwie, Kirkrum, sekk, Rom1, Radigo, GroSeb, everyone...
+
+International Dreamcast Scene : 
+BlackAura, quzar, Rand Linden, Segata Sanshiro, ShadowofBob,
+Mikey242, qatmix, Wraggster, greay, impetus, az_bont, The Kron, kRYPT_, Porto, Fackue/LyingWake, 
+Curtiss Grymala, Ian Michael, Max Scharl, Marcus, Metafox, Darksaviour69, Christuserloeser, scherzo, 
+rmedtx, warmtoe, bucanero, burnerO, DCGrendel, Pavlik, c99koder, M@jk, DCDayDreamer, BlueCrab, 
+ptr.exe, Mekanaizer, Phantom, a128, GPF, atani, WHurricane16, OneThirty8, I.M. Weasel, Arquiero, 
+Ender ... i hope i forgot nobody ... :) 
+
+Spanish Dreamcast Scene : 
+Ron, Kupra, KorteX, LTK666, Belavi, timofonic, D4rkbit, josemci, Chui, Fox68k...
+      
+
+Delphi Programming : 
+Michel, JROD, Vector, Sephiroth Lune, ReMix, DevelOpeR13,'+
+Shai, DooMeeR, tourlourou, Shon, firejocker, jobe, ZeuS-[SFX], elran, Kitsune,
+SindromX, nobs, JohnFullspeed, magicvinni, tode, Columbo, jinh, rguef, '
+Lepidosteus, nicknack, Moniteur, Bill, renou, systmd, outch... tous ceux que j''ai oublié !
+Delphiprog, Nix, Bestiol... de Delphi-FR.
+
+Special Thanks to Rabusier and Broadc4st.
+Anyway, SORRY if you aren't here.
+
+Greetings to MaxX, the original DosCommand component creator.
+This app use GifImage, SynEdit, PngImage, Jedi-VCL, and some others stuffs.
+Many thanks to all for your greats components.
+
+And thank you for using this program.
+
+See ya'
+[big_fury]SiZiOUS, aka SiZ!'
+http://sbibuilder.shorturl.com/'
+     
+
+AND REMEMBER : DREAMCAST IS NOT DEAD!', 7);
+...IT''S ALIVE AND KICKIN.', 7);
+
+...Yeah, I put Space Harrier music with Sonic characters. And then ? :P'
+Thanks to frederic hahn for his cool music. :)'
+
+
+Really cool music, heh ? :)'
+WOOHOO! See you in next release, i hope, Dreamcast is far my favorite system, YEAH! :)

@@ -1,0 +1,67 @@
+TSynDcToolSyn   {first Identifier is considered to be the Class Name }
+tk              {second Identifier is considered to be the Identifier Prefix }
+IdentStart '_', 'a'..'z', 'A'..'Z':: '_', '0'..'9', 'a'..'z', 'A'..'Z'::
+
+TOKENTYPES
+Identifier
+Comments Foreground=clRed
+Space
+String Foreground=clPurple
+Key Foreground=clNavy|Style=[fsBold]
+Failures Background=clRed|Foreground=clWhite|Style=[fsBold]
+MiscInfos Foreground=clPurple|Style=[fsItalic]
+|><|
+
+KEYS
+arch:
+cdfs:
+thd:
+maple:
+vid_set_mode:
+sndoggvorbis:
+snd_sfx:
+sndserver:
+snd_init():
+oggthread:
+fs_iso9660:
+|><|
+
+KEYS MiscInfos
+dc-load console support enabled
+|><|
+
+KEYS Failures
+*** ASSERTION FAILURE ***
+|><|
+
+CHARS
+'A'..'Z', 'a'..'z', '_':: Ident
+BeginProc
+  fTokenID := IdentKind((fLine + Run));
+  inc(Run, fStringLen);
+  while Identifiers[fLine[Run]] do
+    Inc(Run);
+EndProc
+
+|><|
+
+ENCLOSEDBY
+Comment,BraceComment,{,},MultiLine
+Comment,CStyleComment,/*,*/,MultiLine
+String,String,","
+|><|
+
+SAMPLESOURCE
+{ DC-TOOL GUI 3 SERIES - by [big_fury]SiZiOUS }
+
+"Dreamcast REFUSES to DIE"
+
+This highlighter is used with DC-TOOL GUI to recognize 
+KallistiOS features and debugs log.
+
+*** Powered by SynEdit. ***
+
+http://sbibuilder.shorturl.com/
+
+|><|
+

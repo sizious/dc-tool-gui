@@ -1,0 +1,104 @@
+DC-TOOL Driver v1.0 by [big_fury]SiZiOUS [TDosCommand Mod]
+
+{
+this component let you execute a dos program (exe, com or batch file) and catch
+the output in order to put it in a memo or in a listbox, ...
+  you can also send inputs.
+  the cool thing of this component is that you do not need to wait the end of
+the program to get back the output. it comes line by line.
+
+
+ *********************************************************************
+ ** maxime_collomb@yahoo.fr                                         **
+ **                                                                 **
+ **   for this component, i just translated C code                  **
+ ** from Community.borland.com                                      **
+ ** (http://www.vmlinux.org/jakov/community.borland.com/10387.html) **
+ **                                                                 **
+ **   if you have a good idea of improvement, please                **
+ ** let me know (maxime_collomb@yahoo.fr).                          **
+ **   if you improve this component, please send me a copy          **
+ ** so i can put it on www.torry.net.                               **
+ *********************************************************************
+
+ History :
+2002-02-23 : tk
+
+
+ ---------
+ 18-05-2001 : version 2.0
+              - Now, catching the beginning of a line is allowed (usefull if the
+                prog ask for an entry) => the method OnNewLine is modified
+              - Now can send inputs
+              - Add a couple of FreeMem for sa & sd [thanks Gary H. Blaikie]
+ 07-05-2001 : version 1.2
+              - Sleep(1) is added to give others processes a chance
+                [thanks Hans-Georg Rickers]
+              - the loop that catch the outputs has been re-writen by
+                Hans-Georg Rickers => no more broken lines
+ 30-04-2001 : version 1.1
+              - function IsWinNT() is changed to
+                (Win32Platform = VER_PLATFORM_WIN32_NT) [thanks Marc Scheuner]
+              - empty lines appear in the redirected output
+              - property OutputLines is added to redirect output directly to a
+                memo, richedit, listbox, ... [thanks Jean-Fabien Connault]
+              - a timer is added to offer the possibility of ending the process
+                after XXX sec. after the beginning or YYY sec after the last
+                output [thanks Jean-Fabien Connault]
+              - managing process priorities flags in the CreateProcess
+                thing [thanks Jean-Fabien Connault]
+ 20-04-2001 : version 1.0 on www.torry.net
+ *******************************************************************
+ How to use it :
+ ---------------
+  - just put the line of command in the property 'CommandLine'
+  - execute the process with the method 'Execute'
+  - if you want to stop the process before it has ended, use the method 'Stop'
+  - if you want the process to stop by itself after XXX sec of activity,
+    use the property 'MaxTimeAfterBeginning'
+  - if you want the process to stop after XXX sec without an output,
+    use the property 'MaxTimeAfterLastOutput'
+  - to directly redirect outputs to a memo or a richedit, ...
+    use the property 'OutputLines'
+    (DosCommand1.OutputLnes := Memo1.Lines;)
+  - you can access all the outputs of the last command with the property 'Lines'
+  - you can change the priority of the process with the property 'Priority'
+    value of Priority must be in [HIGH_PRIORITY_CLASS, IDLE_PRIORITY_CLASS,
+    NORMAL_PRIORITY_CLASS, REALTIME_PRIORITY_CLASS]
+  - you can have an event for each new line and for the end of the process
+    with the events 'procedure OnNewLine(Sender: TObject; NewLine: string;
+    OutputType: TOutputType);' and 'procedure OnTerminated(Sender: TObject);'
+  - you can send inputs to the dos process with 'SendLine(Value: string;
+    Eol: Boolean);'. Eol is here to determine if the program have to add a
+    CR/LF at the end of the string.
+ *******************************************************************
+ How to call a dos function (win 9x/Me) :
+ ----------------------------------------
+
+ Example : Make a dir :
+ ----------------------
+  - if you want to get the result of a 'c:\dir /o:gen /l c:\windows\*.txt'
+    for example, you need to make a batch file
+    --the batch file : c:\mydir.bat
+        @echo off
+        dir /o:gen /l %1
+        rem eof
+    --in your code
+        DosCommand.CommandLine := 'c:\mydir.bat c:\windows\*.txt';
+        DosCommand.Execute;
+
+  Example : Format a disk (win 9x/Me) :
+  -------------------------
+  --a batch file : c:\myformat.bat
+      @echo off
+      format %1
+      rem eof
+  --in your code
+      var diskname: string;
+      --
+      DosCommand1.CommandLine := 'c:\myformat.bat a:';
+      DosCommand1.Execute; //launch format process
+      DosCommand1.SendLine('', True); //equivalent to press enter key
+      DiskName := 'test';
+      DosCommand1.SendLine(DiskName, True); //enter the name of the volume
+ *******************************************************************}
