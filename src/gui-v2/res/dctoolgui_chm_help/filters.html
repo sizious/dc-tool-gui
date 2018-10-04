@@ -1,0 +1,131 @@
+<title>14. Filtres</title>
+<link href="images/style.css" rel="stylesheet" type="text/css">
+<link href="images/style.css" rel="stylesheet" type="text/css">
+<body background="bkgnd.JPG">
+<font size="2" face="Tahoma, Arial"><strong></strong></font> 
+<table width="109%" border="1" cellspacing="0" bgcolor="#000099">
+  <tr> 
+    <td><font size="2" face="Tahoma, Arial"><strong><font color="#FFFFFF" size="4">14. 
+      Filtres </font></strong></font></td>
+  </tr>
+</table>
+<p><font size="2" face="Tahoma, Arial, Verdana">Ce chapitre traite les filtres. Les filtres 
+  permettent de ne pas ajouter au debug log les lignes inutiles. Voici comment 
+  les utiliser.</font></p>
+<p><font color="#0000CC" size="2" face="Tahoma, Arial, Verdana"><u><strong>1) D&eacute;finir 
+  les filtres</strong></u></font></p>
+<p><font size="2" face="Tahoma, Arial, Verdana"><u><font color="#009900"><u>a) Op&eacute;rations 
+  sur les filtres</u></font></u></font></p>
+<p><font size="2" face="Tahoma, Arial, Verdana">Filtrer, d'accord, mais filtrer quoi ? 
+  Et bien c'est simple, c'est pour vous que a &eacute;t&eacute; cr&eacute;&eacute; 
+  cette fonction. Je remercie JMD au passage. Vous pouvez configurer les filtres 
+  comme vous voulez.</font></p>
+<p><font size="2" face="Tahoma, Arial, Verdana">Bien, pour commencer, ouvrez la bo&icirc;te 
+  de configuration des filtres. Pour cela, allez dans <font color="#CC0000"><em>Filtres</em></font> 
+  &gt; <font color="#CC0000"><em>Configurer les filtres...</em></font> . Vous 
+  avez une bo&icirc;te de dialogue semblable &agrave; celle ci :</font></p>
+<p align="center"><font size="2" face="Tahoma, Arial, Verdana"><img src="dctoolgui_screens/filters1.jpg" width="551" height="377"></font></p>
+<p align="left"><font size="2" face="Tahoma, Arial, Verdana">Bon, la v&ocirc;tre est surement 
+  vide. Ici on voit que j'ai configur&eacute; d&eacute;j&agrave; deux filtres. 
+  Tr&egrave;s simplement, pour ajouter un filtre, cliquez sur <font color="#CC0000"><em>Ajouter...</em></font> 
+  . Une bo&icirc;te de dialogue vous invite &agrave; taper le filtre. Si vous 
+  vous &ecirc;tes tromp&eacute;, vous pouvez cliquer sur la ligne ou est le filtre, 
+  puis cliquer sur <font color="#CC0000"><em>Editer...</em></font> (ou bien clique-droit). 
+  Vous pouvez enfin l'effacer en cliquant sur <font color="#CC0000"><em>Effacer...</em></font> 
+  .</font></p>
+<p align="left"><font size="2" face="Tahoma, Arial, Verdana">Vous pouvez &eacute;galement 
+  effacer toute la liste en cliquant sur <font color="#CC0000"><em>Effacer tout...</em></font> 
+  .</font></p>
+<p align="left"><font size="2" face="Tahoma, Arial, Verdana">Ce qui est bien, c'est que 
+  gr&acirc;ce &agrave; la commande <font color="#CC0000"><em>Charger</em></font> 
+  / <font color="#CC0000"><em>Sauver</em></font>, vous pouvez faire des presets, 
+  ou tout simplement stocker vos filtres dans les fichiers *.flt. Tous les filtres 
+  pr&eacute;sent dans cette fen&ecirc;tre sont stock&eacute;s dans le fichier 
+  <em>FILTERS.FLT. </em></font></p>
+<p align="left"><font size="2" face="Tahoma, Arial, Verdana">Vous pouvez donc <font color="#CC0000"><em>Charger...</em></font> 
+  et remplacer tout le contenu de la bo&icirc;te de dialogue, vous pouvez aussi 
+  <font color="#CC0000"> <em>Ajout Fichier... </em><font color="#000000">pour 
+  rajouter &agrave; la suite de votre bo&icirc;te de dialogue des nouveaux &eacute;l&eacute;ments 
+  et bien sur <font color="#CC0000"><em>Sauver... </em><font color="#000000">pour 
+  conserver votre liste d'&eacute;l&eacute;ments.</font></font></font></font></font></p>
+<p align="left"><font color="#000000" size="2" face="Tahoma, Arial, Verdana">Cliquez sur 
+  <font color="#CC0000"> <em>Appliquer</em></font> pour conserver les changements 
+  ou sinon sur <font color="#CC0000"><em>Annuler</em></font>.</font></p>
+<p align="left"><font size="2" face="Tahoma, Arial, Verdana"><u><font color="#009900"><u>b) Actions 
+  des filtres</u></font></u></font></p>
+<p align="left"><font color="#000000" size="2" face="Tahoma, Arial, Verdana">C'est bien 
+  beau tout ca, mais comment agissent les filtres ?</font></p>
+<p align="left"><font color="#000000" size="2" face="Tahoma, Arial, Verdana"><u>Exemple 
+  :</u> Vous avez sp&eacute;cifi&eacute; dans votre configuration des filtres 
+  la ligne : <font color="#CC0099"> <em>Zero Down</em></font>. Voici differents 
+  cas de figures. Votre ligne de sortie est :</font></p>
+<ul type="square">
+  <li><font color="#CC0099" size="2" face="Tahoma, Arial, Verdana"><em>Zero Down</em></font><font color="#000000" size="2" face="Tahoma, Arial, Verdana"> 
+    : Cette ligne ne sera pas ajout&eacute;e.</font></li>
+  <li><font color="#CC0099" size="2" face="Tahoma, Arial, Verdana"><em>ZERO DOWN</em></font><font color="#000000" size="2" face="Tahoma, Arial, Verdana"> 
+    : Cette ligne non plus.</font></li>
+  <li><font size="2" face="Tahoma, Arial, Verdana"><em><font color="#CC0099">ZeRo DoWn</font></em><font color="#000000"> 
+    : Idem.</font></font></li>
+  <li><font color="#000000" size="2" face="Tahoma, Arial, Verdana">Hello<font color="#CC0099"><em>Zero 
+    DowN</em></font>Cool : Idem.</font></li>
+  <li><font color="#FF00FF" size="2" face="Tahoma, Arial, Verdana"><em>ZeroDown</em></font><font color="#000000" size="2" face="Tahoma, Arial, Verdana"> 
+    With A Lifetime To Pay : celle-ci le sera, par contre.</font></li>
+  <li><font color="#000000" size="2" face="Tahoma, Arial, Verdana"><em><font color="#FF00FF">ZERO_DOWN</font></em>_WITH_A_LIFETIME_TO_PAY 
+    : Celle-ci non plus, ne sera pas d&eacute;tect&eacute;e.</font></li>
+</ul>
+<p><font color="#000000" size="2" face="Tahoma, Arial, Verdana">En r&eacute;sum&eacute;, 
+  d&egrave;s que la cha&icirc;ne <font color="#CC0099"><em>ZERO DOWN</em></font> 
+  est trouv&eacute;e dans la ligne, elle ne sera pas ajout&eacute;e.</font></p>
+<p><font color="#000000" size="2" face="Tahoma, Arial, Verdana"><u>Autre exemple :</u> 
+  Pour bien comprendre, on va prendre autre chose : Vous n'aimez pas la lettre 
+  &quot;<font color="#CC0099"><em>e</em></font>&quot;. Vous mettez cette lettre 
+  dans la bo&icirc;te de filtre. Quelques exemples :</font></p>
+<ul type="square">
+  <li type="square"><font color="#000000" size="2" face="Tahoma, Arial, Verdana">Bonjour 
+    : Pas de probl&egrave;mes.</font></li>
+  <li><font color="#000000" size="2" face="Tahoma, Arial, Verdana">Comm<font color="#CC0099"><em>e</em></font>nt 
+    ca va : Celle-ci sera filtr&eacute;e.</font></li>
+  <li><font color="#000000" size="2" face="Tahoma, Arial, Verdana">Dr<font color="#CC0099"><em>e</em></font>amcast 
+    : Filtr&eacute;e.</font></li>
+  <li><font color="#000000" size="2" face="Tahoma, Arial, Verdana">H<font color="#CC0099"><em>E</em></font>LLO_WORLD 
+    : Filtr&eacute;e.</font></li>
+  <li><font color="#000000" size="2" face="Tahoma, Arial, Verdana">S<font color="#CC0099"><em>E</em></font>GA_DR<font color="#CC0099"><em>E</em></font>AMCAST 
+    : Elle sera filtr&eacute;e deux fois ! (non bien sur).</font></li>
+</ul>
+<p><font color="#000000" size="2" face="Tahoma, Arial, Verdana">Plus g&eacute;n&eacute;ralement, 
+  chaque fois que une ligne comportera la lettre <font color="#CC0099"><em>E</em></font>, 
+  elle sera filtr&eacute;e.</font></p>
+<p><font color="#000000" size="2" face="Tahoma, Arial, Verdana">Les filtres sont tr&egrave;s 
+  sensible, c'est fait expr&egrave;s.</font></p>
+<p><font color="#0000CC" size="2" face="Tahoma, Arial, Verdana"><u><strong>2) Activer les 
+  filtres</strong></u></font></p>
+<p><font color="#000000" size="2" face="Tahoma, Arial, Verdana">Pour activer les filtres, 
+  il suffit de cocher l'&eacute;l&eacute;ment de menu <font color="#CC0000"><em>Activer 
+  les filtres</em></font> disponible dans le menu <font color="#CC0000"><em>Filtres</em></font>, 
+  ou en pressant la combinaison de touches Ctrl+Alt+F.</font></p>
+<p><font color="#000000" size="2" face="Tahoma, Arial, Verdana">Une fois que les filtres 
+  sont en action, les &eacute;l&eacute;ments situ&eacute;es dans la bo&icirc;te 
+  de configuration seront retir&eacute;s du debug log.</font></p>
+<p><font color="#000000" size="2" face="Tahoma, Arial, Verdana">Vous pouvez d&eacute;sactiver 
+  &agrave; chaque instant les filtres en re-s&eacute;lectionnant l'&eacute;l&eacute;ment 
+  de menu.</font></p>
+<p><font color="#0000CC" size="2" face="Tahoma, Arial, Verdana"><u><strong>3) Voir les 
+  lignes filtr&eacute;es</strong></u></font></p>
+<p><font color="#000000" size="2" face="Tahoma, Arial, Verdana">Comme vous avez pu voir, 
+  le filtrage est tr&egrave;s sensible. Imaginez vous avez filtr&eacute; une ligne 
+  importante? Comment faire pour la visionner? Vous pouvez voir les lignes filtr&eacute;es 
+  en temps r&eacute;el. Pour cela, vous avez l'&eacute;l&eacute;ment de menu <font color="#CC0000"><em>Voir 
+  les lignes filtr&eacute;es...</em></font> disponible dans le menu <font color="#CC0000"><em>Filtres</em></font>.</font></p>
+<p><font color="#000000" size="2" face="Tahoma, Arial, Verdana">Dans cette bo&icirc;te 
+  de dialogue vous pouvez voir les lignes filtr&eacute;es, les sauvegarder, les 
+  copier, etc. </font></p>
+<p align="center"><font color="#000000" size="2" face="Tahoma, Arial, Verdana"><img src="dctoolgui_screens/filters2.jpg" width="569" height="287"></font></p>
+<p align="left"><font color="#000000" size="2" face="Tahoma, Arial, Verdana">En gras, les 
+  lignes filtr&eacute;es.</font></p>
+<hr>
+<div align="center"><font size="1" face="Arial, Helvetica, sans-serif"> 2003-2004 
+  DC-TOOL GUI cr&eacute;&eacute; par <a href="http://www.sbibuilder.fr.st/" target="_blank">[</a><a href="http://www.sbibuilder.fr.st/" target="_blank">big_fury]SiZiOUS</a> 
+  - DC-TOOL original cr&eacute;&eacute; par <a href="http://adk.napalm-x.com/dc/" target="_blank">Andrew 
+  Kieschnick</a> - Aide &eacute;crite par <a href="http://www.sbibuilder.fr.st/" target="_blank">[big_fury]SiZiOUS</a> 
+  - <a href="http://www.dctop.fr.st/" target="_blank">La communaut&eacute; fran&ccedil;aise 
+  de la Dreamcast</a></font></div>

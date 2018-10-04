@@ -1,0 +1,395 @@
+[Lang]
+LangName=Français
+Author=[big_fury]SiZiOUS
+Version=2.0
+HelpFile=french.chm
+Comment=Ah la la... C'était un truc de ouf, cette traduction!
+
+[Buttons]
+OK=&OK
+Cancel=&Annuler
+Close=&Fermer
+Default=Par &défaut
+ShowLog=Afficher lo&g >>
+HideLog=&Cacher log <<
+Abort=A&bandonner
+Apply=App&liquer
+Accept=&Valider
+Previous=<&Précédent
+Next=&Suivant>
+Finish=&Terminer
+
+[FileMenu]
+File=&Fichier
+UploadFrom=&Envoyer fichier...
+DownloadTo=&Recevoir fichier...
+DumpDreamcastBIOS=&Copier le BIOS...
+DumpDreamcastGD=C&opier le GD-ROM...
+DumpDreamcastVMU=Co&pier le VMU...
+LinkTest=Tes&ter la liasion...
+DelFlashRom=Effacer la FLA&SH...
+SendACommand=Envoyer &une commande...
+ResetDCTOOL=Ré-&initialiser...
+AbortCurrentOperation=&Annuler l'opération...
+QuitProgram=&Quitter
+
+[FileMenuHints]
+UploadAFileToDreamcastYouCanAlsoExecuteThisFile=Envoyer un fichier. Vous pouvez également l'executer ensuite sur la Dreamcast.
+DownloadAFileFromTheDreamcast=Télécharger des données de la Dreamcast vers un fichier.
+DumpDreamcastBIOSHint=Copier le BIOS de la Dreamcast. Il est composé de deux fichiers : dc_bios.bin et dc_flash.bin.
+DumpDreamcastGDHint=Copier le GD-ROM original inséré dans votre Dreamcast. [DESACTIVE]
+DumpDreamcastVMUHint=Copier le contenu du VMU vers le PC. [DESACTIVE]
+LinkTestHint=Tester votre liaison entre le PC et la Dreamcast.
+DelFlashRomHint=Effacer le contenu de la mémoire FLASH de la Dreamcast. Elle sera comme sortie d'usine!
+SendACommandHint=Envoyer une commande manuelle à DC-TOOL.
+ResetDCTOOLHint=Ré-initialiser DC-TOOL et DC-TOOL GUI. Cette commande fait aussi un reset au BBA avec l'option -r.
+AbortCurrentOperationHint=Annuler l'opération en cours (de récéption ou d'envoi).
+ExitThisProgram=Quitter le programme, bye bye :)
+
+[EditMenu]
+Edit=&Edition
+SetAddressesTo=&Définir l'adresse à...
+SetSizeTo=Définir la &taille...
+SetLinkType=Définir le t&ype de liaison
+Serial=Cable &série
+BroadBand=&Broadband Adapter
+SetDevicePortTo=Définir le &port COM
+SetBaudrateTo=Définir la vitesse de transfert...
+SetCommunicationIPTo=Dé&finir l'IP de communication...
+
+[EditMenuHints]
+SetAdressesToDefaultIs0x8C010000=Définir l'adresse (par défaut 0x8C010000)
+SetSizeToSpecifiedValueForDownloadCommand=Définir la taille à la valeur spécifiée pour la commande "Recevoir"
+SetLinkTypeHint=Définir le type de liaison utilisé (Broadband/LAN Adapter ou Coders Cable).
+SerialHint=DC-TOOL GUI va utiliser le cable série. Vous devez utiliser le CD DC-LOAD.
+BroadbandAdapterHint=DC-TOOL GUI va utiliser le BroadBand/LAN Adapter. Vous devez utiliser le CD DC-LOAD-IP.
+UseDeviceToCommunicateWithTheDreamcastDefaultCOM1=Spécifier le port de communication avec la Dreamcast (COM1 par défaut)
+SetBaudrateDefaultIs57600=Spécifier la vitesse de transfert (baudrate) à une valeur (défaut 57600 bauds)
+SetCommunicationIPToHint=Spécifier l'IP de communication pour un adaptateur haut débit
+
+[DebugMenu]
+Debug=&Debug
+CopySelectedText=&Copier texte sélectionné
+SelectAll=&Tout sélectionner
+FindText=&Chercher du texte...
+SaveOutputsAs=&Sauvegarder log sous...
+ClearDebugLog=&Effacer le debug log...
+GotoLine=&Aller à la ligne...
+ReExecute=&Ré-executer
+SaveDialogTitle=Sauvegarder le journal vers...
+SaveDialogFilter=Documents RTF (*.rtf)|*.rtf|Fichiers texte (*.txt)|*.txt|Tous les fichiers (*.*)|*.*
+
+[DebugMenuHints]
+CopySelectedTextHint=Copier le texte sélectionné dans le debug log.
+SelectAllHint=Tout sélectionner dans le debug log.
+FindTextHint=Chercher du texte dans le debug log.
+SaveOutputsAsHint=Sauvegarder toutes les sorties du debug log dans un fichier.
+ClearDebugLogHint=Tout effacer du debug log.
+GotoLineHint=Aller à la ligne dont l'indice est entre paranthèses.
+ReExecuteHint=Re-executer la commande sélectionnée avec tous les anciens paramètres spécifiés.
+
+[FiltersMenu]
+Filters=F&iltres
+EnableFilters=&Activer les filtres
+ConfigureFilters=&Configurer les filtres...
+ViewFilteredOutputs=&Voir les lignes filtrées...
+
+[FiltersMenuHints]
+EnableFiltersHint=Activer les filtres, qui permettent de ne pas ajouter les lignes inutiles.
+ConfigureFiltersHint=Configurer les lignes à supprimer.
+ViewFilteredOutputsHint=Voir les lignes supprimées. Permet de vérifier qu'aucune ligne importante soit filtrée.
+
+[OptionsMenu]
+Options=&Options
+TryAlternateBaudrateTo115200=Act&iver le baudrate alterné à 115200 bauds
+DontAttachConsoleAndFileserver=Ne &pas lier la console et le serveur de fichier
+UseDumbTerminalRatherThanConsoleFileserver=&Utiliser le terminal Dumb
+DontClearScreenBeforeDownload=&Ne pas effacer l'écran avant le téléchargement
+Advanced=Options avan&cées...
+
+[OptionsMenuHints]
+TryAlternateBaudrateTo115200AndChangeBaudrateTo115200=Essayer le baudrate alterné à 115200 bauds et changer la vitesse de transfert à 115200 bauds
+DontAttachConsoleAndFileserverOptionHint=Ne pas attacher la console et le serveur de fichier
+UseDumbTerminalRatherThanConsoleFileserverOptionHint=Utiliser le terminal Dumb plutot que le serveur fichier de la console
+DontClearScreenBeforeDownloadOptionHint=Ne pas effacer l'écran de la console avant le téléchargement
+AdvancedHint=Spécifier les options avancées, comme la redirection de fichiers Image ISO ou encore le Chroot.
+
+[ConfigMenu]
+Configuration=&Config
+ConfigurationWizard=&Assistant de config...
+ConfigurationOfDCToolGUI=&Emplacement de DC-TOOL...
+CygwinDLL=Conf&igurer les DLL de Cygwin...
+BINStateDetection=Con&figurer la détection des BINs...
+Options=&Options diverses...
+History=&Historique...
+
+[ConfigMenuHints]
+ConfigurationWizardHint=Ouvrir l'assistant de configuration
+ConfigurationOfDCToolGUIHint=Indiquer l'emplacement de DC-TOOL si vous ne voulez pas utiliser celui inclu (v1.0.3).
+CygwinDLLsHint=Indiquer si vous souhaitez utiliser les DLL Cygwin incluses ou pas.
+BINStateDetectionHint=Configurer le module de détection des BIN (scrambled/unscrambled).
+OptionsHint=Configurer quelques options diverses...
+HistoryHint=Voir l'historique des fichiers uploadés et downloadés.
+
+[HelpMenu]
+Help=&Aide
+MainHelp=Aide &principale...
+SubmitDCToolGUIBugs=&Envoyer un rapport de bugs...
+Websites=Sites &web
+About=A &propos...
+
+[HelpMenuHint]
+DisplayMainHelp=Afficher l'aide principale du programme
+SubmitDCToolGUIBugsToAuthor=Envoyer un rapport de bugs de DC-TOOL GUI à l'auteur
+VisitWebsites=Visiter les sites web en rapport avec DC-TOOL GUI et DC-TOOL
+AboutThisProgram=A propos de ce programme | L'auteur, c'est moi ! ;p
+OfficialDCToolWebsite=Visiter le site officiel de DC-TOOL
+DCToolGUIWebsite=Visiter le site web de l'auteur :)
+
+[UploadWindow]
+Title=Envoyer un fichier à la Dreamcast
+UploadButton=&Envoyer
+ParametersGroupBox=Paramètres de l'envoi :
+InputFileLabel=Fichier source :
+UploadAndExecuteCheckBox=Executer après l'envoi du fichier
+InputOpenDialogTitle=Sélectionnez le fichier à envoyer...
+InputOpenDialogFilter=Applications (*.elf;*.bin;*.srec)|*.elf;*.bin;*.srec|Fichiers SH-ELF (*.elf)|*.elf|BINs RAW Unscrambled (*.bin)|*.bin|Fichiers scripts (*.srec)|*.srec|Tous les fichiers (*.*)|*.*
+
+[DownloadWindow]
+Title=Recevoir un fichier de la Dreamcast
+DownloadButton=&Recevoir
+ParametersGroupBox=Paramètres de la réception :
+SetSizeButton=Définir la &taille
+OutputFile=Fichier cible :
+OutputSaveDialogTitle=Veuillez spécifier un nom pour le fichier...
+OutputSaveDialogFilter=Fichiers binaires (*.bin)|*.bin|Tous les fichiers (*.*)|*.*
+
+[DisclaimerWindow]
+WarningDisclaimer=Avertissement de légalité
+IAgree=&J'accepte
+IDisagree=Je &refuse
+DontAskItAgain=&Ne plus me le rapeller
+
+[DumpDreamcastBIOS]
+DumpingBIOSTitle=Copie du BIOS en cours...
+WarningDumpingYourBiosIsAllowedOnlyIfItIsYourDreamcast=ATTENTION : Copier votre BIOS est autorisé SEULEMENT si vous ne le distribuez pas. Si vous le distribuez, je ne pourrais pas être responsable.
+SaveDreamcastBIOSFilesTo=Sauvegarder les fichiers du BIOS vers :
+Current=Courant :
+Overall=Total :
+DumpingDreamcastBIOSPleaseWait=Copie du BIOS en cours... Veuillez patienter.
+Status=Statut :
+SaveTo=Fichier :
+InProgress=EN COURS
+Success=REUSSI
+Failed=ECHEC!
+
+[LinkTest]
+Title=Tester la liaison
+Begin=&Commencer
+DreamcastPCLinkTester=Test de liaison Dreamcast <-> PC
+Outputs=Sorties :
+
+[AddressWindow]
+Title=Définir l'adresse
+PleaseSetTheNewAddressNowGroupBox=Veuillez définir l'adresse maintenant :
+SetAddressTo=Définir l'adresse à : 
+
+[SetSizeWindow]
+Title=Définir la taille
+SetSizeTo=Définir la taille à : 
+SetTheSizeNowGroupBox=Définir la taille maintenant :
+Bytes=octets
+
+[BaudrateWindow]
+Title=Définir la vitesse de transfert
+SetBaudrateToGroupBox=Définir la vitesse de transfert à :
+SetBaudrateTo=Définir le baudrate à : 
+Bauds=bauds
+
+[SetIP]
+Title=Définir l'IP de communication
+PleaseSetTheNewAddressNow=Veuiller définir l'adresse maintenant :
+EnterIPAddress=Adresse IP :
+IPAddressMustBeValidFormat0000To255255255255=L'IP doit être valide. Format : '0.0.0.0' à '255.255.255.255'.
+
+[FiltersConfiguration]
+Title=Configurer les filtres
+Filters=Filtres :
+FiltersLetYouToHideTheUselessLinesWhenYouMakeTransfer=Les filtres permettent de ne pas ajouter les lignes inutiles pendant un transfert.
+Add=&Ajouter...
+Edit=&Editer...
+Delete=E&ffacer...
+DeleteAll=&Tout effacer...
+Load=&Charger...
+Append=Ajout &fichier...
+Save=&Sauver...
+PleaseChooseYourFileNameDialogTitle=Veuillez choisir votre nom de fichier...
+DialogFilter=Fichiers filtres (*.flt)|*.flt|Tous les fichiers (*.*)|*.*
+
+[DctoolLocationWindow]
+Title=Emplacement de DC-TOOL
+DCToolLocationGroupBox=Location de &DC-TOOL :
+InternalDCTool=&DC-TOOL interne
+ExternalDCTool=D&C-TOOL externe
+Location=&Location :
+TitleOpenDialog=Spécifiez la location du nouveau DC-TOOL...
+FilterOpenDialog=Applications DC-TOOL (dc-tool.exe;dc-tool-ip.exe)|dc-tool-ip.exe;dc-tool.exe|Application DC-TOOL (dc-tool.exe)|dc-tool.exe|Application DC-TOOL-IP (dc-tool-ip.exe)|dc-tool-ip.exe|Applications (*.exe)|*.exe|Tous les fichiers (*.*)|*.*
+DCTOOLInternalVersionIsVersion103=Note : Le DC-TOOL interne est la version 1.0.3.
+DCToolType=Type de DC-TOOL :
+
+[CygwinWindow]
+ConfigureCygwinLibrariesTitle=Configurer les bibliothèques Cygwin
+NoteCygwinDLLAreCygwin1andCygintlv1003_22_0_0=Note : Les DLL Cygwin sont cygwin1.dll et cygintl.dll (v1003.22.0.0).
+InternalCygwinDLL=&DLL Cygwin interne
+UseCygwinInstalledPackage=&Utiliser l'installation de Cygwin
+
+[BinCheckModuleWindow]
+BinCheckModuleConfigurationTitle=Configuration du module de vérification des BIN
+AskOnlyBeforeUnscramblingTheBinIfTheBinIsScrambled=&Demander seulement si le BIN est scramblé.
+AlwaysConfirmTheResultOfBinDetection=&Toujours confirmer le résultat de la détection.
+UnscrambleAutoOntheBinDirectoryWithoutPrompt=&Unscrambler automatiquement si le BIN est scramblé.
+DontUseTheBinCheckModuleThanks=&Ne pas utiliser ce module, merci.
+
+[OptionsWindow]
+OptionsTitle=Options
+Options=Options :
+DisableWarningIfTheAddressIsNotSetAt0x8C10000ForUpload=&Désactiver l'avertissement si l'adresse n'est pas fixée à 0x8C10000 pour l'envoi
+DisableTheStartupSplashScreen=Désa&ctiver l'écran de démarrage
+DisableAutoExpandTreeAfterOperation=Désact&iver l'auto-expansion de l'arbre après l'opération d'envoi ou de réception
+AllowLongFilesNameInDebugView=&Autoriser les longs nom de fichiers dans le debug
+
+[HistoryWindow]
+HistoryManager=Gestionnaire d'historique
+HistoryGroupBox=Historique :
+Clean=&Nettoyer...
+
+[AdvancedWindow]
+AdvancedOptionsTitle=Options avancées
+ChrootToDirectory=Chroot vers dossier :
+EnableChrootToPath=Activer le Chroot vers dossier
+CdfsISORedirection=Redirection d'image ISO CDFS :
+EnableCDFSRedirectionWithanISOImage=Activer la redirection CDFS avec une image ISO
+InvalidPathPleaseVerifyTheDirectory=Chemin invalide! Veuillez vérifier le dossier.
+PleaseSelectTheFolder=Veuiller sélectionner le dossier :
+IsoOpenDialogTitle=Veuillez choisir le fichier ISO...
+IsoOpenDialogFilter=Images CD ISO (*.iso)|*.iso|Tous les fichiers (*.*)|*.*
+
+[WizardConfig]
+Title=Assistant de configuration
+HelloDearUserTitle=Salut, chèr(e) utilisateur!
+WelcomeTip=Salut! Je suis le Magicien de configuration de DC-TOOL GUI. C'est la première fois que vous lancez le logiciel. Je vais vous aider à la configurer. Pour cela, veuillez me suivre :)
+PleaseClickOnNextButton=Veuillez cliquer sur le bouton "Suivant" !
+SelectYourLinkTypeTitle=Sélection du type de liaison
+LinkTypeTip=Veuillez choisir votre mode de connexion, c'est à dire votre moyen de dialoguer avec la console Dreamcast. Vous devez posséder le CD DC-LOAD correspondant, soit DC-LOAD-IP pour le BroadBand Adapter, soit DC-LOAD pour la version Coders Cable (Port série).
+LinkType=Type de liaison :
+CodersCable=Coders Cable (Série)
+BroadBandAdapter=Broadband Adapter (BBA)
+Nothing=Rien
+SerialCodersCableTitle=Serial Coders Cable
+SerialCodersCableTip1=Bien, vous avez choisi le Coders Cable. Moi aussi je le possède :)
+SerialCodersCableTip2=Bon choisissez ici tous vos paramètres, comme la vitesse de transfert et le port série utilisé.
+ChooseYourBaudrate=Vitesse de transfert :
+EnableAlternate115200=&Activer 115200 bds alterné
+ChooseYourCOMPort=Sélectionnez votre port COM :
+BroadBandAdapterTitle=Broadband Adapter
+BroadBandAdapterTip1=Bien, vous avez choisi le Broadband adapter. Cool mec, moi aussi j'aimerais en avoir un, mais j'ai pas d'argent :/
+BroadBandAdapterTip2=Rentrez l'IP avec laquelle vous souhaitez communiquer.
+EnterIPHere=Entrez l'IP ici :
+ForInfoPort31313IsUsed=Pour information, le port 31313 est utilisé.
+FinishedTitle=Terminé !
+FinishedTip1=FINI! Amusez vous bien avec DC-TOOL GUI par [big_fury]SiZiOUS! Un grand merci à tous mes bêta testers et ainsi qu'a tous ceux que j'ai oublié. Evidemment, un grand merci à Andrew Kieschnick, l'auteur de DC-TOOL original !
+FinishedTip2=Cliquez sur Terminer pour quitter l'assistant.
+AreYouSureToCloseTheDialogWizard=Êtes vous sur(e) de vouloir fermer l'assistant ?
+ThisIsAJoke=Hé! Imbécile ! Bon bah vous comptez faire comment ? Vous avez le BlueTooth ou le WiFi ? Ceci est une blague ^^
+
+[ProgressWindow]
+UploadingFile=Envoi du fichier...
+DownloadingFile=Récéption du fichier...
+StopButton=&Arrêter
+WorkInProgressPleaseWait=Travail en cours... Veuillez patienter.
+TargetFile=Fichier :
+
+[DelFlashWindow]
+Title=Outil d'effacement de la FLASH Dreamcast
+
+[SendCmdWindow]
+SendACommandToDCTOOL=Envoyer une commande à DC-TOOL
+Command=Commande :
+DisplayTheOriginalDOSConsole=&Afficher la console DOS originale
+RunButton=&Lancer
+
+[Events]
+Question=Question
+Information=Information
+Error=Erreur
+Warning=Attention
+Removed=Enlevé.
+PleaseSpecifyTheFile=Veuillez spécifier le fichier!
+ErrorFileNotFound=Erreur : Fichier non trouvé.
+InputPathEmpty=Chemin vide!
+SizeIsIncorrect=Taille incorrecte!
+BaudrateIsIncorrect=Baudrate incorrect!
+FileExistsDoYouWantToReplaceIt=Le fichier existe. Voulez vous le remplacer?
+SizeCantBeZero=La taille ne peut pas être de zéro.
+AreYouSureToStopDumpingYourBIOS=Êtes vous sur(e) de vouloir arrêter la copie du BIOS?
+PleaseInsertTheDCLOADDiscAndRebootConsole=Veuillez insérer le disque DC-LOAD dans la Dreamcast et rebooter votre console.
+AreYouSureToCancelTheLinkTest=Êtes vous sur(e) de vouloir arrêter le test?
+YourLinkIsCorrectlySetAndActive=Votre liaision est correctement configurée et activée.
+AreYouSureToResetDCTOOL=Êtes vous sur(e) de vouloir ré-initialiser DC-TOOL?
+TextNotFoundOrAllOccurencesFound=Texte non trouvé, ou toutes les occurences trouvées.
+PleaseSelectANode=Veuillez sélectionner un élément.
+AreYouSureToDeleteOutputs=Êtes vous sur(e) de vouloir effacer toutes les sorties de debug?
+ThereAreCurrentlyAProcessDoYouWantToAbortIt=Il y'a un process en cours d'execution. Arrêter quand même?
+CloseWithoutSavingChanges=Fermer sans sauvegarder les changements?
+AddANewItem=Ajouter un nouvel élément :
+EnterTheStringHere=Entrez la nouvelle chaîne ici :
+EditCurrentItem=Editer l'élément courant :
+PleaseEnterTheCorrectedItemHere=Veuillez entrer l'élément correct ici :
+CantBeEmpty=Ne peut être vide.
+PleaseSelectAItem=Veuillez sélectionner un élément.
+AreYouSureToDeleteThisKeyword=Êtes vous sur(e) de vouloir effacer ce mot clef ?
+AreYouSureToDeleteAllFilters=Êtes vous sur(e) de vouloir effacer tous les filtres ???
+AreYouSureToRemplaceAllFilters=Êtes vous sur(e) de vouloir remplacer tout les filtres ???
+NothingWasAddedToTheListBecauseThereIsNothingToAdd=Rien n'a été ajouté car rien n'est en plus.
+ThereIs=Il y a
+ItemsAdded=élément(s) ajouté(s).
+AreYouSureToClearTheList=Êtes vous sur(e) de vouloir effacer la liste ?
+ClearThisList=Effacer cette lis&te...
+StayOnTop=Par &dessus toutes les fenêtres
+ShowMainWindow=Afficher la fenêtre &principale
+StayOnTopHint=Afficher la fenêtre par dessus toutes les autres du bureau.
+ShowMainWindowHint=Afficher la fenêtre principale.
+ClearThisListHint=Effacer la liste de cette fenêtre.
+CloseThisWindowHint=Fermer cette fenêtre.
+DoYouWantToDeleteAll=Êtes vous sur(e) de tout effacer ?
+PleaseSelectAnItemBefore=Veuillez sélectionner un élément avant!
+DoYouWantToCleanInvalidFilenames=Voulez vous effacer les nom de fichiers invalide ?
+AbortOperation=Annuler l'opération ?
+DumpingDreamcastBIOSoperationCompleted=La copie du BIOS de votre Dreamcast est terminée.
+TheBiosFilenameExistsInThisDirectory=Un fichier BIOS existe déjà dans ce dossier.
+TheFlashFilenameExistsInThisDirectory=Un fichier FLASH existe déjà dans ce dossier.
+OverWriteIt=L'écraser ?
+WarningAddressIsNotTheDefaultAddress=Attention : L'adresse spécifiée n'est pas celle par défaut.
+DoYouWantToContinueAnyway=Voulez vous continuer quand même ?
+ErrorWhenUnscramblingTheBINAborted=Erreur lors de l'unscramblage du BIN. Opération abandonnée.
+TheBinIsScrambledUnscrambleIt=Le BIN est scramblé. L'unscrambler maintenant?
+UploadAnyway=Envoyer quand même ?
+UploadThisScrambledFileNotRecommended=Ce fichier est scramblé. L'envoyer quand même (non recommandé) ?
+WarningDCLOADCanCrashAfterExecutingThisFile=Attention : DC-LOAD peut crasher si il execute ce fichier.
+TheBinWasDetected=Le BIN a été détecté comme :
+Scrambled=SCRAMBLED
+Unscrambled=UNSCRAMBLED
+YouMustUnscrambleIt=Vous devez l'unscrambler.
+TheFileIsCorrect=Ce fichier est correct.
+DoYouAgree=Êtes vous d'accord ?
+AreYouSureToUnscrambleTheFileAndRenameThisFileasScrambledBin=Êtes vous sur(e) d'unscrambler ce fichier et le renommer en 'scrambled.bin' ?
+WarningThisIsNotRecommendedClickOnTheNoButtonToUploadTheFile=Attention : Ceci n'est pas recommandé. Cliquez sur 'Non' pour envoyer le fichier.
+PleaseRebootYourDreamcastNowIfYouMustSetTheDateTimeTheFLASHResetIsCompleted=Veuillez redémarrer votre Dreamcast maintenant. Vous devez changer la date et l'heure si le reset a bien marché.
+WarningResetingYourFLASHMemoryEraseAllDatasYourISPSettingsWithDreamkey=ATTENTION : Effacer votre mémoire FLASH efface TOUTES les données liées à la config ISP (=Dreamkey),
+DateTimeAndLanguageSelectionYourDreamcastIsSetAsFactoryVMUIsNotDeleted=la date, l'heure et la langue. Votre Dreamcast sera comme en sortie d'usine. Le VMU n'est pas affecté.
+AreYouSureToCancelTheFLASHReset=Êtes vous sur(e) d'annuler le reset de la FLASH (si c'est pas trop tard ?) ?
+WhenTheUploadIsFinishedTheScreensBorderShouldBecomeRedThenGreen=Quand l'upload finira, la bordure deviendra rouge puis verte.
+ItIsRedWhileErasingTheFlashAndTurnGreenWhenItsDone=C'est rouge quand ca efface la FLASH et ca devient vert quand c'est fini.
+ItsVeryQuickItTakesApproxMidSecond=C'est très rapide ca prend 1/2 secondes.
+AreYouSureToCancel=Êtes vous sur(e) d'annuler ?
+WarningThisIsNotAWarezTool=ATTENTION : Copier votre GD-ROM original est autorisé *SEULEMENT* si vous êtes le *PROPRIETAIRE*. Vous ne devez pas le distribuer. CECI N'EST *PAS* UN OUTIL POUR LE WAREZ!!!

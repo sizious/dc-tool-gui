@@ -1,0 +1,92 @@
+<title>15. Module de d&eacute;tection des binaires</title>
+<link href="images/style.css" rel="stylesheet" type="text/css">
+<body background="bkgnd.JPG">
+<font size="2" face="Tahoma, Arial"><strong></strong></font> 
+<table width="109%" border="1" cellspacing="0" bgcolor="#000099">
+  <tr> 
+    <td><font size="2" face="Tahoma, Arial"><strong><font color="#FFFFFF" size="4">15. 
+      Module de d&eacute;tection des binaires</font></strong></font></td>
+  </tr>
+</table>
+<p><font size="2" face="Tahoma, Arial, Verdana">Ce chapitre traite du module de d&eacute;tection 
+  des binaires.</font></p>
+<p><font size="2" face="Tahoma, Arial, Verdana">En effet, il existe 2 types de fichiers 
+  binaires :</font></p>
+<ul type="square">
+  <li><font size="2" face="Tahoma, Arial, Verdana">Scrambled,</font></li>
+  <li><font size="2" face="Tahoma, Arial, Verdana">Unscrambled.</font></li>
+</ul>
+<p><font size="2" face="Tahoma, Arial, Verdana">Normalement, Scrambled = Chiffr&eacute;. 
+  Mais je ne pr&eacute;f&egrave;re pas traduire, car vous risquez de rencontrer 
+  souvent cette notion. Je ne sais pas pourquoi par contre il existe ces 2 types. 
+  En revanche, DC-TOOL ne prend que les fichiers Unscrambled (=d&eacute;chiffr&eacute;s). 
+  Sinon le programme scrambled plante.</font></p>
+<p><font size="2" face="Tahoma, Arial, Verdana">C'est pourquoi il existe ce module 
+  de d&eacute;tection.</font></p>
+<p><font color="#0000CC" size="2" face="Tahoma, Arial, Verdana"><u><strong>1) Choix de 
+  votre m&eacute;thode de d&eacute;tection</strong></u></font></p>
+<p><font size="2" face="Tahoma, Arial, Verdana">Allez dans <font color="#CC0000"><em>Config</em></font> 
+  &gt; <font color="#CC0000"><em>Configurer la d&eacute;tection des BIN</em></font>. 
+  Vous avez une bo&icirc;te de dialogue comme celle-ci :</font></p>
+<p align="center"><font size="2" face="Tahoma, Arial, Verdana"><u><strong><font color="#0000CC"><img src="dctoolgui_screens/bincheck1.jpg" width="414" height="167"></font></strong></u></font></p>
+<p align="left"><font size="2" face="Tahoma, Arial, Verdana">Choississez votre mode ici. 
+  Vous pouvez choisir de ne pas l'utiliser directement, en cliquant sur le dernier 
+  bouton. Une fois votre choix fait, cliquez sur <font color="#CC0000"><em>OK</em></font>.</font></p>
+<p align="left"><font size="2" face="Tahoma, Arial, Verdana">Etudions maintenant les differentes 
+  possibilit&eacute;s offertes.</font></p>
+<p align="left"><font color="#009900" size="2" face="Tahoma, Arial, Verdana"><u>a) Demander 
+  seulement si le BIN est scrambl&eacute;</u></font></p>
+<p align="left"><font size="2" face="Tahoma, Arial, Verdana">Essayer d'envoyer un fichier 
+  BIN scrambl&eacute;. Vous aurez une question comme celle-ci :</font></p>
+<p align="center"><font size="2" face="Tahoma, Arial, Verdana"><img src="dctoolgui_screens/binchk_binscr1.jpg" width="304" height="137"></font></p>
+<p align="left"><font size="2" face="Tahoma, Arial, Verdana">Cliquez sur <font color="#CC0000"><em>Oui</em></font> 
+  pour renommer votre BIN actuel en <em>&lt;nom_du_bin&gt;.Scrambled.bin</em> 
+  et uploader le fichier corrig&eacute;. Si vous cliquez sur <font color="#CC0000"><em>Non</em></font>, 
+  vous aurez une autre question : </font></p>
+<p align="center"><font size="2" face="Tahoma, Arial, Verdana"><img src="dctoolgui_screens/binchk_uplany1.jpg" width="234" height="137"></font></p>
+<p align="left"><font size="2" face="Tahoma, Arial, Verdana">Si vous cliquez sur <font color="#CC0000"><em>Oui</em></font>, 
+  le fichier sera envoy&eacute; quand m&ecirc;me. Souvent il ne fonctionne pas. 
+  Si vous cliquez sur <font color="#CC0000"><em>Non</em></font>, vous annulez 
+  l'op&eacute;ration.</font></p>
+<p align="left"><font color="#009900" size="2" face="Tahoma, Arial, Verdana"><u>b) Toujours 
+  confirmer le r&eacute;sultat de la d&eacute;tection</u></font></p>
+<p align="left"><font size="2" face="Tahoma, Arial, Verdana"> Si vous activez ceci, vous 
+  aurez une question du genre :</font></p>
+<p align="center"><font size="2" face="Tahoma, Arial, Verdana"><img src="dctoolgui_screens/binchk_agree1.jpg" width="339" height="137"></font></p>
+<p align="left"><font size="2" face="Tahoma, Arial, Verdana">A chaque fois que vous envoyez 
+  un fichier binaire, vous devrez accepter et valider la d&eacute;tection. Si 
+  vous &ecirc;tes d'accord : cliquez sur <font color="#CC0000"><em>Oui</em><font color="#000000">. 
+  Sinon, cliquez sur </font><em>Non</em></font>. Si vous cliquez sur <font color="#CC0000"><em>Oui</em></font>, 
+  le fichier est envoy&eacute; si celui-ci est Unscrambled. Sinon, il est unscrambl&eacute; 
+  puis envoy&eacute;.</font></p>
+<p align="left"><font size="2" face="Tahoma, Arial, Verdana">Si vous cliquez sur <font color="#CC0000"><em>Non</em></font> 
+  alors que le fichier est unscrambled, vous aurez ceci :</font></p>
+<p align="center"><font size="2" face="Tahoma, Arial, Verdana"><img src="dctoolgui_screens/binchk_noagree1.jpg" width="535" height="137"></font></p>
+<p align="left"><font size="2" face="Tahoma, Arial, Verdana">Vous avez une explication 
+  de la situation.</font></p>
+<p align="left"><font color="#009900" size="2" face="Tahoma, Arial, Verdana"><u>c) Unscrambler 
+  automatiquement si le BIN est scrambl&eacute;</u></font></p>
+<p align="left"><font size="2" face="Tahoma, Arial, Verdana">Cette fonction ne demande 
+  rien, et unscramble un fichier scrambl&eacute; automatiquement, m&ecirc;me si 
+  il se trompe dans la d&eacute;tection.</font></p>
+<p align="left"><font color="#009900" size="2" face="Tahoma, Arial, Verdana"><u>d) Ne pas 
+  utiliser le module de d&eacute;tection, merci</u></font></p>
+<p align="left"><font size="2" face="Tahoma, Arial, Verdana">Vous n'allez pas utiliser 
+  ce module. Vous devrez donc conna&icirc;tre la nature du BIN que vous envoyez.</font></p>
+<p align="left"><font color="#0000CC" size="2" face="Tahoma, Arial, Verdana"><u><strong>2) 
+  Plus loin avec la notion Scrambled/Unscrambled</strong></u></font></p>
+<p align="left"><font size="2" face="Tahoma, Arial, Verdana">Vous pouvez v&eacute;rifier 
+  &agrave; l'exterieur de DC-TOOL GUI si le programme que vous voulez envoyer 
+  est scrambled ou pas. Pour cela, t&eacute;l&eacute;charger 1st_read.bin File 
+  Checker v1.3 de <a href="http://www.consolevision.com/members/fackue/" target="_blank">Fackue</a>.</font></p>
+<p align="left"><font size="2" face="Tahoma, Arial, Verdana">A noter que le code de ma 
+  DLL BINCHECK.DLL a &eacute;t&eacute; traduit du Visual Basic par moi (je me 
+  suis fait aider sur <a href="http://www.phidels.com/" target="_blank">Phidels.com</a>, 
+  vu que je connais pas le VB). Merci Fackue pour son source code.</font></p>
+<hr>
+<div align="center"><font size="1" face="Arial, Helvetica, sans-serif"> 2003-2004 
+  DC-TOOL GUI cr&eacute;&eacute; par <a href="http://www.sbibuilder.fr.st/" target="_blank">[</a><a href="http://www.sbibuilder.fr.st/" target="_blank">big_fury]SiZiOUS</a> 
+  - DC-TOOL original cr&eacute;&eacute; par <a href="http://adk.napalm-x.com/dc/" target="_blank">Andrew 
+  Kieschnick</a> - Aide &eacute;crite par <a href="http://www.sbibuilder.fr.st/" target="_blank">[big_fury]SiZiOUS</a> 
+  - <a href="http://www.dctop.fr.st/" target="_blank">La communaut&eacute; fran&ccedil;aise 
+  de la Dreamcast</a></font></div>

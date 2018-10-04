@@ -1,0 +1,35 @@
+[OPTIONS]
+;Index file=Index.hhk
+Compatibility=1.1 or later
+Compiled file=help_fr.chm
+Contents file=Table of Contents.hhc
+Default topic=index.html
+Display compile progress=Yes
+Language=0x40c Français (France)
+Title=Aide de DC-TOOL GUI - by [big_fury]SiZiOUS - http://www.sbibuilder.fr.st/
+
+
+[FILES]
+upload.html
+vmutool.html
+about.html
+addlang.html
+bincheck.html
+bios.html
+config.html
+delflash.html
+download.html
+faq.html
+filters.html
+first.html
+gdripper.html
+history.html
+index.html
+init.html
+links.html
+menus.html
+overview.html
+test.html
+
+[INFOTYPES]
+

@@ -1,0 +1,18 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=eng_help.chm
+Contents file=Table of Contents.hhc
+Default topic=index.html
+Display compile progress=No
+Language=0x409 Anglais (États-Unis)
+Title=DC-TOOL GUI help - by [big_fury]SiZiOUS - http://www.sbibuilder.fr.st/
+
+
+[FILES]
+readme.html
+about.html
+index.html
+links.html
+
+[INFOTYPES]
+

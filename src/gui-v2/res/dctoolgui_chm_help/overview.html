@@ -1,0 +1,94 @@
+<title>7. Pr&eacute;sentation du debug log</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href="images/style.css" rel="stylesheet" type="text/css">
+<body background="bkgnd.JPG">
+<font size="2" face="Tahoma, Arial"><strong></strong></font> 
+<table width="109%" border="1" cellspacing="0" bgcolor="#000099">
+  <tr> 
+    <td><font size="2" face="Tahoma, Arial"><strong><font color="#FFFFFF" size="4">7. 
+      Pr&eacute;sentation du debug log</font></strong></font></td>
+  </tr>
+</table>
+<p><font size="2" face="Tahoma, Arial, Verdana">Ce chapitre explique comment lire le debug 
+  log. </font></p>
+<p><font color="#0000CC" size="2" face="Tahoma, Arial, Verdana"><u><strong>1) Le debug 
+  log</strong></u></font></p>
+<p><font size="2" face="Tahoma, Arial, Verdana">Apr&egrave;s avoir <a href="upload.html">envoy&eacute;</a> 
+  ou <a href="download.html">re&ccedil;u</a> un fichier, vous avez beaucoup de 
+  texte qui s'ajoute de toutes les couleurs. C'est pas pour faire joli. Vous pouvez 
+  vous en servir pour analyser le comportement du programme.</font></p>
+<p><font size="2" face="Tahoma, Arial, Verdana">Prenons un exemple pour la d&eacute;monstration. 
+  Vous avez envoy&eacute; par exemple... VMU Tool de speud. Analysons ensemble 
+  le debug log qu'il nous a sorti.</font></p>
+<p><font size="2" face="Tahoma, Arial, Verdana">Apr&egrave;s avoir attendu quelques minutes 
+  lors de l'envoi du programme, vous avez un &eacute;cran comme celui ci :</font></p>
+<p align="center"><font size="2" face="Tahoma, Arial, Verdana"><img src="dctoolgui_screens/ex-vmu.jpg" width="720" height="530"></font></p>
+<p><font size="2" face="Tahoma, Arial, Verdana">Vous voyez plein de lignes, de toute les 
+  couleurs. Ca fait joli hein? J'ai bien choisi les couleurs ? Bon plus serieusement, 
+  on peut voir 3 type de lignes (et de couleurs) :</font></p>
+<ul type="square">
+  <li><font size="2" face="Tahoma, Arial, Verdana">Rouge,</font></li>
+  <li><font size="2" face="Tahoma, Arial, Verdana">Vert,</font></li>
+  <li><font size="2" face="Tahoma, Arial, Verdana">Bleu.</font></li>
+</ul>
+<p><font size="2" face="Tahoma, Arial, Verdana">A quoi correspond ces couleurs 
+  ? Voici l'explication :</font></p>
+<ul type="square">
+  <li><font color="#CC0000" size="2" face="Tahoma, Arial, Verdana"><em>Rouges 
+    : </em><font color="#000000"> 
+    Elles sont identifi&eacute;es par le d&eacute;but de ligne 'State' (=&eacute;tat). 
+    Il s'agit de lignes d'informations, la plupart du temps. Elles sont ajout&eacute;es 
+    par DC-TOOL GUI.</font></font></li>
+  <li><font size="2" face="Tahoma, Arial, Verdana"><em><font color="#CC0000">Vertes 
+    : </font></em><font color="#000000">Les 
+    lignes vertes sont identifi&eacute;es par 'Cmd' (=commande). Il s'agit des 
+    lignes de commandes. En fait, elles donnent une info interressante : Elles 
+    pemettent de savoir ce que DC-TOOL GUI envoie &agrave; DC-TOOL. Comme si vous 
+    les avez tap&eacute;es...</font></font></li>
+  <li><font size="2" face="Tahoma, Arial, Verdana"><em><font color="#CC0000">Bleues 
+    : </font></em><font color="#000000">La 
+    majorit&eacute; des lignes sont bleues. Pourquoi ? Tout simplement car ce 
+    sont ces lignes qui sont envoy&eacute;es par DC-TOOL, elles sont identifi&eacute;es 
+    par 'Output' (=sorties). En effet, c'est DC-TOOL lui m&ecirc;me, ou m&ecirc;me 
+    parfois le programme que vous avez envoy&eacute; qui les envoie.</font></font></li>
+</ul>
+<p><font color="#000000" size="2" face="Tahoma, Arial, Verdana">Bref, revenons 
+  &agrave; ce qui se passe sur l'&eacute;cran : Vous voyez que votre programme 
+  est execut&eacute;. Si vous changez quelque chose, que vous cliquez, vous verrez 
+  des sorties qui seront ajout&eacute;es.</font></p>
+<p><font color="#0000CC" size="2" face="Tahoma, Arial, Verdana"><u><strong>2) L'arbre d'historique</strong></u></font></p>
+<p><font color="#000000" size="2" face="Tahoma, Arial, Verdana">Autre exemple 
+  : Vous avez execut&eacute; un autre programme. Il est termin&eacute; (comme 
+  vous voyez en bas, <em><font color="#CC0000">Upload processus completed on 11/07/2004 
+  - 16:13:18, Exit Code : 0</font></em>). Bon, au passage, exit code = 0 veut 
+  dire que tout c'est bien pass&eacute;.</font></p>
+<p><font color="#009900" size="2" face="Tahoma, Arial, Verdana"><u>a) Aller &agrave; la 
+  ligne </u></font></p>
+<p><font color="#000000" size="2" face="Tahoma, Arial, Verdana">Regardez l'arbre 
+  sur la gauche. Vous voyez <font color="#CC0000"><em>Block Start (5)</em></font> 
+  s&eacute;lectionn&eacute;. Faites de m&ecirc;me...</font></p>
+<p align="center"><font size="2" face="Tahoma, Arial, Verdana"><u><strong><font color="#0000CC"><img src="dctoolgui_screens/ex-tree1.jpg" width="653" height="431"></font></strong></u></font></p>
+<p><font color="#000000" size="2" face="Tahoma, Arial, Verdana">...puis cliquez 
+  avec le bouton droit, s&eacute;lectionnez <font color="#CC0000"><em>Aller &agrave; 
+  la ligne...</em></font> ...</font></p>
+<p align="center"><font size="2" face="Tahoma, Arial, Verdana"><u><strong><font color="#0000CC"><img src="dctoolgui_screens/ex-tree2.jpg" width="239" height="199"></font></strong></u></font></p>
+<p><font color="#000000" size="2" face="Tahoma, Arial, Verdana">...Puis regardez 
+  ou est le curseur ! Il se trouve &agrave; la ligne 5, comme le montre l'image.</font></p>
+<p align="center"><font size="2" face="Tahoma, Arial, Verdana"><u><strong><font color="#0000CC"><img src="dctoolgui_screens/ex-tree3.jpg" width="255" height="170"></font></strong></u></font></p>
+<p><font color="#009900" size="2" face="Tahoma, Arial, Verdana"><u>b) R&eacute;-executer</u></font></p>
+<p><font color="#000000" size="2" face="Tahoma, Arial, Verdana">Vous avez peut-&ecirc;tre 
+  remarqu&eacute; que il y'avais un &eacute;l&eacute;ment re-executer d&eacute;sactiv&eacute;. 
+  Pour l'activer, cliquez sur le noeud parent, puis s&eacute;lectionnez la commande 
+  r&eacute;-executer. Cela aura pour action de re-executer la commande faite (marqu&eacute;e 
+  en dessous, dans Config) avec tous les param&egrave;tres utilis&eacute;s &agrave; 
+  ce moment la.</font></p>
+<p align="center"><font color="#000000" size="2" face="Tahoma, Arial, Verdana"><img src="dctoolgui_screens/re-exec.jpg" width="283" height="160"></font></p>
+<p align="left"><font color="#000000" size="2" face="Tahoma, Arial, Verdana">Vous 
+  voyez que vous pouvez re-executer :)</font></p>
+<hr>
+<div align="center"><font size="1" face="Arial, Helvetica, sans-serif"> 2003-2004 
+  DC-TOOL GUI cr&eacute;&eacute; par <a href="http://www.sbibuilder.fr.st/" target="_blank">[</a><a href="http://www.sbibuilder.fr.st/" target="_blank">big_fury]SiZiOUS</a> 
+  - DC-TOOL original cr&eacute;&eacute; par <a href="http://adk.napalm-x.com/dc/" target="_blank">Andrew 
+  Kieschnick</a> - Aide &eacute;crite par <a href="http://www.sbibuilder.fr.st/" target="_blank">[big_fury]SiZiOUS</a> 
+  - <a href="http://www.dctop.fr.st/" target="_blank">La communaut&eacute; fran&ccedil;aise 
+  de la Dreamcast</a></font></div>

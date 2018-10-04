@@ -1,0 +1,133 @@
+<title>1. Pr&eacute;paration de la liaison</title>
+<link href="images/style.css" rel="stylesheet" type="text/css">
+<link href="images/style.css" rel="stylesheet" type="text/css">
+<body background="bkgnd.JPG">
+<font size="2" face="Tahoma, Arial"><strong></strong></font> 
+<table width="109%" border="1" cellspacing="0" bgcolor="#000099">
+  <tr> 
+    <td><font size="2" face="Tahoma, Arial"><strong><font color="#FFFFFF" size="4">1. 
+      Pr&eacute;paration de la liaison</font></strong></font></td>
+  </tr>
+</table>
+<p><font size="2" face="Tahoma, Arial, Verdana">Ce chapitre traite de la pr&eacute;paration 
+  de la Dreamcast et du PC pour &eacute;tablir la liaison.</font></p>
+<p><font size="2" face="Tahoma, Arial, Verdana"><u><strong><font color="#0000CC">1</font></strong></u><font color="#0000CC"><strong><u>) 
+  Relier la Dreamcast au PC </u></strong></font></font></p>
+<p align="left"><font size="2" face="Tahoma, Arial, Verdana">Pour pouvoir communiquer avec 
+  la Dreamcast il faut relier la console &agrave; votre ordinateur.</font></p>
+<p align="left"><font size="2" face="Tahoma, Arial, Verdana">Les moyens de connexion 
+  sont nombreux : Vous pouvez communiquer avec le <font color="#FF0000"><u>Coders 
+  Cable</u></font>, cable s&eacute;rie standard qui se branche sur un port COM, 
+  un <u><font color="#FF0000">Broadband Adapter</font></u> (R&eacute;f. HIT-400), 
+  qui est un modem Haut d&eacute;bit se branchant &agrave; la place du modem standard 
+  de la Dreamcast ou encore un <u> <font color="#FF0000">LAN Adapter</font></u> 
+  (Ref. HIT-300), qui semblable au <u><font color="#FF0000">Broadband Adapter</font></u>, 
+  se branche au m&ecirc;me endroit ; cependant, il est exp&eacute;rimental car 
+  il est n&eacute;cessaire d'appliquer le <a href="http://cadcdev.sourceforge.net/files/dcload-ip-la.diff" target="_blank">patch</a> 
+  de Dan Potter pour l'utiliser.</font></p>
+<p align="left"><font size="2" face="Tahoma, Arial, Verdana">Cependant, une version 
+  de DC-LOAD-IP v1.0.4 supportant le LAN Adapter est apparue, et comme je ne poss&egrave;de 
+  ni de LAN Adapter, ni cette version (&agrave; l'heure ou j'&eacute;cris ces 
+  lignes), je ne peux pas vous en dire plus.</font></p>
+<p align="left"><font size="2" face="Tahoma, Arial, Verdana"><em><u>R&eacute;capitulatif 
+  des moyens possible de connexion :</u></em></font></p>
+<ul type="square">
+  <li><font size="2" face="Tahoma, Arial, Verdana">Coders Cable (Cable s&eacute;rie),</font></li>
+  <li><font size="2" face="Tahoma, Arial, Verdana">Broadband Adapter [BBA] (Modem haut 
+    d&eacute;bit, r&eacute;f. HIT-400),</font></li>
+  <li><font size="2" face="Tahoma, Arial, Verdana">LAN Adapter (Modem haut d&eacute;bit, 
+    exp&eacute;rimental, r&eacute;f. HIT-300).</font></li>
+</ul>
+<p><font size="2" face="Tahoma, Arial, Verdana">Pour pouvoir utiliser les adapteurs haut 
+  d&eacute;bit, vous devez poss&eacute;der une carte Ethernet, et un cable crois&eacute; 
+  RJ-45. Pour le cable s&eacute;rie, aucune contrainte (enfin si, un port COM!).</font></p>
+<p><font size="2" face="Tahoma, Arial, Verdana">Le principal avantage des connexions haut 
+  d&eacute;bit est que le d&eacute;bit est extr&egrave;ment plus sup&eacute;rieur 
+  &agrave; celui du Coders Cable (rapport tr&egrave;s grand!). Mais ce genre de 
+  connexion est tr&egrave;s ch&egrave;re, difficile &agrave; trouver et &agrave; 
+  mettre en oeuvre (il faut une carte Ethernet, un BBA &agrave; + de 100&euro;, 
+  et un bon cable crois&eacute;). Et &eacute;galement... pas tr&egrave;s utile.</font></p>
+<p><font size="2" face="Tahoma, Arial, Verdana">La solution recommand&eacute;e est le Coders 
+  Cable, il est largement suffisant. Vous pouvez en plus vous en procurer un pour 
+  &agrave; peine 44&euro; (comme le mien, sur <a href="http://www.fl-games.com/" target="_blank">FL-Games</a>) 
+  ou alors d'autres sites, comme <a href="http://www.lik-sang.com/" target="_blank">Lik-Sang.com</a>, 
+  propose ce cable &agrave; 25&euro;. C'est le seul investissement &agrave; faire.</font></p>
+<p><font size="2" face="Tahoma, Arial, Verdana">D'autres sites vous propose de construire 
+  le Coders Cable, mais ce n'est pas tr&egrave;s avantageux. Vous pouvez presque 
+  en acheter un tout fait pour pas plus cher. Vous pouvez chercher sur <a href="http://www.google.com/" target="_blank">Google</a> 
+  pour en savoir plus.</font></p>
+<p align="left"><font color="#0000CC" size="2" face="Tahoma, Arial, Verdana"><strong><u>2) 
+  Le CD-ROM d'initialisation</u></strong></font></p>
+<p align="left"><font size="2" face="Tahoma, Arial, Verdana">DC-TOOL GUI ne s'utilise pas 
+  tout seul. En effet, il permet seulement le pilotage de la Dreamcast, et est 
+  &agrave; lancer sur le PC. Pour la Dreamcast, pour lui faire comprendre les 
+  ordres que vous lui donnez, il faut lancer un CD-ROM : DC-LOAD. C'est avec lui 
+  que DC-TOOL va dialoguer, afin de pouvoir faire ce que vous voulez.</font></p>
+<p align="left"><font size="2" face="Tahoma, Arial, Verdana">Tout d'abord, sachez que pour 
+  communiquer avec le Coders Cable et avec le Broadband Adapter (BBA), les CD-ROM 
+  (tout comme les DC-TOOL) sont diff&eacute;rents.</font></p>
+<p align="left"><font size="2" face="Tahoma, Arial, Verdana">Avant l'arriv&eacute;e de 
+  DC-TOOL GUI, il existait donc un DC-LOAD &amp; DC-TOOL pour la version Coders 
+  Cable (S&eacute;rie) et un DC-LOAD-IP et DC-TOOL-IP pour la version Haut d&eacute;bit.</font></p>
+<p align="left"><font size="2" face="Tahoma, Arial, Verdana"><em><u>Voici un tableau r&eacute;capitulatif 
+  :</u></em></font></p>
+<p align="left"><font size="2" face="Tahoma, Arial, Verdana">Vous poss&eacute;dez :</font></p>
+<ul type="square">
+  <li><font size="2" face="Tahoma, Arial, Verdana" align="left">Un Coders Cable (Cable 
+    s&eacute;rie) : Utilisez le CD-ROM DC-LOAD.</font></li>
+  <li><font size="2" face="Tahoma, Arial, Verdana">Un Adapteur Haut d&eacute;bit (LAN ou 
+    BBA) : Utilisez le CD-ROM DC-LOAD-IP.</font></li>
+</ul>
+<p><font size="2" face="Tahoma, Arial, Verdana">Les CD-ROM d'initialisation sont disponibles 
+  dans ce package. Ils sont &eacute;galement disponible sur le site de <a href="http://adk.napalm-x.com/dc/" target="_blank">ADK/Napalm</a>. 
+  Finalement, gr&acirc;ce &agrave; DC-TOOL GUI, les DC-TOOL &amp; DC-TOOL-IP originaux 
+  sont communs ! En revanche, les DC-LOAD &amp; DC-LOAD-IP sont diff&eacute;rents.</font></p>
+<p><font color="#FF0000" size="2" face="Tahoma, Arial, Verdana"><u><em>Note importante</em></u><em> 
+  </em><em>:</em> Vous devez poss&eacute;der le <strong>m&ecirc;me num&eacute;ro 
+  de version SI POSSIBLE pour DC-LOAD &amp; DC-TOOL</strong> (ou DC-LOAD-IP &amp; 
+  DC-TOOL-IP). <strong>La version actuelle</strong> est la version <strong>v1.0.3</strong>. 
+  Vous ne trouverez surement que cette version sur internet. Sachez que DC-TOOL 
+  GUI pilote le DC-TOOL v1.0.3. Il vous faut donc un DC-LOAD v1.0.3. Cependant 
+  il existe une version de DC-LOAD-IP v1.0.4 qui supporte le LAN adapter. Vous 
+  pouvez normalement l'utiliser avec le DC-TOOL-IP v1.0.3, donc avec DC-TOOL GUI.</font></p>
+<p><font size="2" face="Tahoma, Arial, Verdana">Vous pouvez malgr&eacute; tout changer 
+  le programme DC-TOOL (non recommand&eacute;). Consultez le chapitre <a href="config.html">Location 
+  des programmes</a> vitaux pour plus d'informations.</font></p>
+<p><font color="#0000CC" size="2" face="Tahoma, Arial, Verdana"><strong><u>3) Graver le 
+  CD-ROM d'initialisation</u></strong></font></p>
+<p><font size="2" face="Tahoma, Arial, Verdana">Le CD-ROM est disponible sous plusieurs 
+  format d'image CD. Ceux qui sont inclus dans ce package sont sous la forme <a href="http://www.padus.com" target="_blank">Padus 
+  DiscJuggler</a> (Image CDI). Vous pouvez les graver avec <a href="http://www.alcohol-software.com/" target="_blank">Alcohol</a> 
+  &eacute;galement.</font></p>
+<p><font size="2" face="Tahoma, Arial, Verdana">Des images <a href="http://www.ahead.de/" target="_blank">Nero 
+  Burning Rom</a> sont &eacute;galement disponibles. Mais ce format n'est pas 
+  recommand&eacute; du fait de l'incompatibilit&eacute; entre la version v5.5 
+  (la bonne version) et la v6.0. Vous pouvez malgr&eacute; tout en trouver un 
+  peu partout sous ce format.</font></p>
+<p><font size="2" face="Tahoma, Arial, Verdana">La seule contrainte lors de la gravure 
+  d'image est <font color="#FF0000"><u>la vitesse de gravure</u></font> : <font color="#FF0000"><u>Vous 
+  devez la limiter &agrave; 4x</u></font> car sinon la Dreamcast aura du mal &agrave; 
+  lire le CD-ROM (du moins &agrave; le d&eacute;marrer). Du moins, essayez de 
+  la limiter le plus possible.</font></p>
+<p><font color="#0000CC" size="2" face="Tahoma, Arial, Verdana"><strong><u>4) Pr&eacute;paration 
+  &agrave; la liaison</u></strong></font></p>
+<p><font size="2" face="Tahoma, Arial, Verdana">a) Apr&egrave;s avoir grav&eacute; votre 
+  CD-ROM DC-LOAD (ou DC-LOAD-IP) ins&eacute;rez-le dans la console.<br>
+  b) Branchez votre <font color="#FF0000"><u>Coders Cable</u></font> ou votre 
+  <font color="#FF0000"> <u>adapteur Haut d&eacute;bit</u></font> &agrave; la 
+  Dreamcast.<br>
+  c) Allumez la console.<br>
+  d) Si votre CD est bien grav&eacute;, vous devez arriver &agrave; un &eacute;cran 
+  comme le suivant :</font></p>
+<p align="center"><font size="2" face="Tahoma, Arial, Verdana"><img src="screens/dcload1.JPG" width="160" height="100"></font></p>
+<p align="left"><font size="2" face="Tahoma, Arial, Verdana">Votre connexion est pr&ecirc;te 
+  &agrave; &ecirc;tre <a href="test.html">test&eacute;e</a>. Si c'est la premi&egrave;re 
+  fois que vous lancez le logiciel, vous devrez d'abord <a href="first.html">configurer 
+  le programme DC-TOOL GUI</a>.</font></p>
+<hr>
+<div align="center"><font size="1" face="Arial, Helvetica, sans-serif"> 2003-2004 
+  DC-TOOL GUI cr&eacute;&eacute; par <a href="http://www.sbibuilder.fr.st/" target="_blank">[</a><a href="http://www.sbibuilder.fr.st/" target="_blank">big_fury]SiZiOUS</a> 
+  - DC-TOOL original cr&eacute;&eacute; par <a href="http://adk.napalm-x.com/dc/" target="_blank">Andrew 
+  Kieschnick</a> - Aide &eacute;crite par <a href="http://www.sbibuilder.fr.st/" target="_blank">[big_fury]SiZiOUS</a> 
+  - <a href="http://www.dctop.fr.st/" target="_blank">La communaut&eacute; fran&ccedil;aise 
+  de la Dreamcast</a></font></div>

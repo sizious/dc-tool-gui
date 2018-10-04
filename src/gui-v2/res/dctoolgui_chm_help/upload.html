@@ -1,0 +1,164 @@
+<title>4. Envoyer un programme &agrave; la Dreamcast</title>
+<link href="images/style.css" rel="stylesheet" type="text/css">
+<link href="images/style.css" rel="stylesheet" type="text/css">
+<link href="images/style.css" rel="stylesheet" type="text/css">
+<body background="bkgnd.JPG">
+<font size="2" face="Tahoma, Arial"><strong></strong></font> 
+<table width="109%" border="1" cellspacing="0" bgcolor="#000099">
+  <tr> 
+    <td><font size="2" face="Tahoma, Arial"><strong><font color="#FFFFFF" size="4">4. 
+      Envoyer un programme &agrave; la Dreamcast</font></strong></font></td>
+  </tr>
+</table>
+<p><font size="2" face="Tahoma, Arial, Verdana">Ce chapitre traite de l'upload (=envoi) 
+  d'un programme &agrave; la Dreamcast, soit l'envoi d'un fichier afin de l'executer.</font></p>
+<p><font color="#0000CC" size="2" face="Tahoma, Arial, Verdana"><u><strong>1) V&eacute;rification 
+  de la connexion</strong></u></font></p>
+<p><font size="2" face="Tahoma, Arial, Verdana">Avant de commencer, veuillez v&eacute;rifier 
+  les points suivants :</font></p>
+<ul type="square">
+  <li><font size="2" face="Tahoma, Arial, Verdana">Votre CD DC-LOAD est dans le lecteur 
+    de la Dreamcast.</font></li>
+  <li><font size="2" face="Tahoma, Arial, Verdana">Votre connexion est reli&eacute;e au 
+    PC. Si vous avez un Coders Cable, qu'il soit branch&eacute; au port COM. Pour 
+    un BBA qu'il soit branch&eacute; &agrave; la carte Ethernet.</font></li>
+  <li><font size="2" face="Tahoma, Arial, Verdana">Que vous avez une manette (vide m&ecirc;me) 
+    dans le port A : Elle pourra servir.</font></li>
+  <li><font size="2" face="Tahoma, Arial, Verdana">Que vous avez une TV ou un &eacute;cran 
+    (de type Commodore, comme le mien) avec Prise p&eacute;ritel pas loin, pour 
+    visualiser les sorties de la Dreamcast.</font></li>
+</ul>
+<p><font size="2" face="Tahoma, Arial, Verdana">Une fois que vous avez v&eacute;rifi&eacute; 
+  la check list, vous pouvez <a href="test.html">tester la connexion</a>, si vous 
+  ne l'avez pas fait.</font></p>
+<p><font color="#0000CC" size="2" face="Tahoma, Arial, Verdana"><u><strong>2) Param&eacute;trer 
+  les options d'envoi</strong></u></font></p>
+<p><font color="#009900" size="2" face="Tahoma, Arial, Verdana"><u>a) Introduction</u></font></p>
+<p><font size="2" face="Tahoma, Arial, Verdana">Avant d'envoyer un programme sur la Dreamcast, 
+  vous pouvez configurer les options d'envoi. Il peut s'agir (en r&egrave;gle 
+  g&eacute;n&eacute;rale) :</font></p>
+<ul type="square">
+  <li><font size="2" face="Tahoma, Arial, Verdana">Param&eacute;trage de la connexion,</font></li>
+  <li><font size="2" face="Tahoma, Arial, Verdana">D&eacute;finition de l'adresse de d&eacute;part, 
+    (non recommand&eacute;)</font></li>
+  <li><font size="2" face="Tahoma, Arial, Verdana">Utilisation du module de v&eacute;rification 
+    des fichiers binaires,</font></li>
+  <li><font size="2" face="Tahoma, Arial, Verdana">Sp&eacute;cifier les options avanc&eacute;es.</font></li>
+</ul>
+<p><font color="#009900" size="2" face="Tahoma, Arial, Verdana"><u>b) Param&eacute;trage de la connexion</u></font></p>
+<p><font size="2" face="Tahoma, Arial, Verdana">Normalement, vous avez d&eacute;j&agrave; 
+  param&eacute;tr&eacute; la connexion. Si ce n'est pas le cas, consultez le chapitre 
+  <a href="first.html">Premi&egrave;re utilisation de DC-TOOL GUI</a> pour l'utilisation 
+  de l'assistant de configuration, sinon vous pouvez consulter le chapitre <a href="menus.html">Pr&eacute;sentation 
+  des Menus</a>.</font></p>
+<p><font color="#009900" size="2" face="Tahoma, Arial, Verdana"><u>c) D&eacute;finition 
+  de l'adresse de d&eacute;part (non recommand&eacute;)</u></font></p>
+<p><font size="2" face="Tahoma, Arial, Verdana">Ceci n'est pas n&eacute;cessaire. Pourtant, 
+  l'option existe au cas ou vous aurez besoin de la changer dans un cas sp&eacute;cifique. 
+  Si vous voulez uploader un fichier simplement pour le tester ou l'executer, 
+  vous pouvez passer ce paragraphe. Normalement elle sert seulement pour la r&eacute;c&eacute;ption 
+  de donn&eacute;es.</font></p>
+<p><font size="2" face="Tahoma, Arial, Verdana">Rendez vous dans le menu <font color="#CC0000"><em>Edition</em></font> 
+  &gt; <font color="#CC0000"><em>D&eacute;finir l'adresse &agrave;...</em></font> 
+  . Vous voyez appara&icirc;tre une bo&icirc;te de dialogue :</font></p>
+<p align="center"><font size="2" face="Tahoma, Arial, Verdana"><img src="dctoolgui_screens/addr1.jpg" width="301" height="136"></font></p>
+<p align="left"><font size="2" face="Tahoma, Arial, Verdana">Vous avez un bouton <font color="#CC0000"><em>D&eacute;faut</em></font> 
+  pour r&eacute;tablir l'adresse de base. Il n'est pas recommand&eacute; de changer 
+  cette valeur, c'est pour cela que le bouton <font color="#CC0000"><em>D&eacute;faut</em></font> 
+  existe. Tapez votre adresse ici en base hexad&eacute;cimale puis cliquez sur 
+  <font color="#CC0000"> <em>OK</em></font>.</font></p>
+<p align="left"><font size="2" face="Tahoma, Arial, Verdana"><u><font color="#009900"><u>d) </u>Module 
+  de v&eacute;rification des fichiers binaires</font></u></font></p>
+<p align="left"><font size="2" face="Tahoma, Arial, Verdana">Consultez le chapitre Configuration 
+  du <a href="bincheck.html">module de v&eacute;rification des fichiers binaires</a> 
+  pour plus d'informations &agrave; ce sujet.</font></p>
+<p align="left"><font size="2" face="Tahoma, Arial, Verdana"><u><font color="#009900"><u>e) </u>Options 
+  avanc&eacute;es</font></u></font></p>
+<p align="left"><font size="2" face="Tahoma, Arial, Verdana">Les options avanc&eacute;es 
+  sont disponible dans le menu <font color="#CC0000"><em>Options</em></font> &gt; 
+  <font color="#CC0000"> <em>Options avanc&eacute;es...</em></font> .</font></p>
+<p align="center"><font size="2" face="Tahoma, Arial, Verdana"><img src="dctoolgui_screens/advanced1.jpg" width="439" height="248"></font></p>
+<p align="left"><font size="2" face="Tahoma, Arial, Verdana">Vous avez deux options disponibles 
+  :</font></p>
+<ul type="square">
+  <li><font size="2" face="Tahoma, Arial, Verdana">Chroot to path,</font></li>
+  <li><font size="2" face="Tahoma, Arial, Verdana">Redirection d'images CD.</font></li>
+</ul>
+<p><font size="2" face="Tahoma, Arial, Verdana"><u><font color="#0000FF">Chroot to path</font></u> 
+  (=Changer de chemin...?) est une option... dont je ne connais pas vraiment l'utilit&eacute;. 
+  Je sais comment elle fonctionne, mais je ne vois pas l'int&eacute;r&ecirc;t 
+  sous Windows. Vous devez &ecirc;tre un super utilisateur comme sp&eacute;cifi&eacute; 
+  dans l'aide de DC-TOOL original ;)</font></p>
+<p><font size="2" face="Tahoma, Arial, Verdana">En revanche, <u><font color="#0000FF">redirection 
+  d'images CD ISO</font></u> est une option interressante. En effet, il est possible 
+  de simuler la pr&eacute;sence d'un CD au programme Dreamcast (marche seulement 
+  avec les programmes utilisant KallistiOS, semblerai-t-il).</font></p>
+<p><font size="2" face="Tahoma, Arial, Verdana">Pour cela il faut cr&eacute;er une image 
+  ISO du CD en question (comme d&eacute;crit dans le tutorial de <a href="http://mc.pp.se/dc/cdr.html" target="_blank">Marcus</a>, 
+  sauf qu'il faut s'arr&ecirc;ter avant l'ajout du BootStrap).</font></p>
+<p><font size="2" face="Tahoma, Arial, Verdana">Une fois l'image CD pr&ecirc;te, cliquer 
+  sur le petit bouton en forme de dossier (avant bien sur, cliquer sur la case 
+  &agrave; cocher<font color="#CC0000"> <em>activer</em></font>). Une boite de 
+  dialogue chercher le fichier appara&icirc;t. S&eacute;lectionnez le fichier 
+  ISO &agrave; utiliser.</font></p>
+<p align="center"><font size="2" face="Tahoma, Arial, Verdana"><img src="dctoolgui_screens/adv-iso1.jpg" width="563" height="419"></font></p>
+<p align="left"><font size="2" face="Tahoma, Arial, Verdana">Cliquez sur <font color="#CC0000"><em>Ouvrir</em></font>.</font></p>
+<p align="center"><font size="2" face="Tahoma, Arial, Verdana"><img src="dctoolgui_screens/adv-iso2.jpg" width="439" height="248"></font></p>
+<p align="left"><font size="2" face="Tahoma, Arial, Verdana">Cliquez sur <font color="#CC0000"><em>OK</em></font>.</font></p>
+<p><font size="2" face="Tahoma, Arial, Verdana">Vous n'avez plus qu'a charger le fichier 
+  binaire principal sur la Dreamcast (comme expliqu&eacute; dans le paragraphe 
+  suivant), DC-TOOL GUI fera le reste.</font></p>
+<p align="left"><font color="#0000CC" size="2" face="Tahoma, Arial, Verdana"><u><strong>3) 
+  Envoyer le programme &agrave; la Dreamcast</strong></u></font></p>
+<p align="left"><font size="2" face="Tahoma, Arial, Verdana">Pour uploader (=envoyer) un 
+  fichier, allez dans le menu <em><font color="#CC0000">Fichier</font></em>, puis 
+  s&eacute;lectionnez <font color="#CC0000"><em>Envoyer fichier...</em></font> 
+  . Une bo&icirc;te de dialogue appara&icirc;t :</font></p>
+<p align="center"><font size="2" face="Tahoma, Arial, Verdana"><img src="dctoolgui_screens/upload1.jpg" width="448" height="151"></font></p>
+<p align="left"><font size="2" face="Tahoma, Arial, Verdana">Vous voyez une bo&icirc;te 
+  de dialogue avec plusieurs contr&ocirc;les. Cliquez sur le bouton &agrave; droite 
+  de la zone de texte pour s&eacute;lectionner un fichier sur votre disque dur.</font></p>
+<p align="left"><font size="2" face="Tahoma, Arial, Verdana">Si vous souhaitez executer 
+  le fichier apr&egrave;s l'envoi, cochez la case <font color="#CC0000"><em>Executer 
+  apr&egrave;s l'envoi du fichier</em></font> (par d&eacute;faut). Une 
+  fois que vous aurez termin&eacute;, cliquez sur <font color="#CC0000"><em>Envoyer</em></font>.</font></p>
+<p align="left"><font size="2" face="Tahoma, Arial, Verdana">Note : Vous avez acc&egrave;s 
+  &agrave; un historique en cliquant sur la fl&egrave;che de la zone de texte. 
+  Pour plus d'informations, consultez le chapitre <a href="history.html">Historique</a>.</font></p>
+<p align="left"><font size="2" face="Tahoma, Arial, Verdana">Le programme sera maintenant 
+  envoy&eacute; sur la Dreamcast. Vous pouvez suivre son cours dans la fen&ecirc;tre 
+  de progression qui s'affiche.</font></p>
+<p align="center"><font size="2" face="Tahoma, Arial, Verdana"><img src="dctoolgui_screens/up_progr1.jpg" width="251" height="152"></font></p>
+<p align="left"><font size="2" face="Tahoma, Arial, Verdana">Vous pouvez suivre la progression 
+  gr&acirc;ce &agrave; la barre. Elle se remplit correctement pour les fichiers 
+  BIN. Pour les fichiers ELF elle se remplit puis se vide car le DC-TOOL GUI va 
+  envoyer section par section le fichier plut&ocirc;t que tout d'un coup.</font></p>
+<p align="left"><font size="2" face="Tahoma, Arial, Verdana">Vous pouvez annuler le transfert 
+  en cliquant sur <font color="#CC0000"><em>Arr&ecirc;ter </em><font color="#000000">(non 
+  recommand&eacute;). Effectivement si vous annulez, vous devez red&eacute;marrer 
+  la Dreamcast (en ins&eacute;rant le CD DC-LOAD correspondant &agrave; votre 
+  mode de connexion) car DC-LOAD ne supporte pas l'abandon de transfert (malheuresement).</font></font></font></p>
+<p align="left"><font color="#000000" size="2" face="Tahoma, Arial, Verdana">Une fois que 
+  l'envoi est termin&eacute;, la fen&ecirc;tre de progression se r&eacute;duit. 
+  Vous avez acc&egrave;s au debug log (=sorties du programme DC-TOOL et sorties 
+  du programme).</font></p>
+<p align="center"><font color="#000000" size="2" face="Tahoma, Arial, Verdana"><img src="dctoolgui_screens/debug1.jpg" width="586" height="423"></font></p>
+<p align="left"><font color="#000000" size="2" face="Tahoma, Arial, Verdana">Pour plus 
+  d'information sur la pr&eacute;sentation du logiciel, consultez le chapitre 
+  <a href="overview.html">Pr&eacute;sentation des sorties de debuggage</a>.</font></p>
+<p align="left"><font color="#000000" size="2" face="Tahoma, Arial, Verdana">Vous voyez 
+  qu'il y'a beaucoup de texte &eacute;crit. Vous avez la possibilit&eacute; de 
+  retirer les lignes inutiles. Pour cela, consultez le chapitre traitant des <a href="filters.html">Filtres</a>.</font></p>
+<p align="left"><font color="#0000FF" size="2" face="Tahoma, Arial, Verdana"><strong>Bravo! 
+  Normalement, vous avez des choses sur votre &eacute;cran de Dreamcast (tout 
+  d&eacute;pend de la nature du programme...).</strong></font></p>
+<p align="left"><font color="#000000" size="2" face="Tahoma, Arial, Verdana">Vous pouvez 
+  profiter d&egrave;s maintenant de la simplicit&eacute; de DC-TOOL GUI pour tester 
+  vos projets ou essayer des d&eacute;mos !</font></p>
+<hr>
+<div align="center"><font size="1" face="Arial, Helvetica, sans-serif"> 2003-2004 
+  DC-TOOL GUI cr&eacute;&eacute; par <a href="http://www.sbibuilder.fr.st/" target="_blank">[</a><a href="http://www.sbibuilder.fr.st/" target="_blank">big_fury]SiZiOUS</a> 
+  - DC-TOOL original cr&eacute;&eacute; par <a href="http://adk.napalm-x.com/dc/" target="_blank">Andrew 
+  Kieschnick</a> - Aide &eacute;crite par <a href="http://www.sbibuilder.fr.st/" target="_blank">[big_fury]SiZiOUS</a> 
+  - <a href="http://www.dctop.fr.st/" target="_blank">La communaut&eacute; fran&ccedil;aise 
+  de la Dreamcast</a></font></div>

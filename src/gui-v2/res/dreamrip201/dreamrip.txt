@@ -1,0 +1,116 @@
+DreamRip 2.01: support Broad Band Adapter
+
+必要なもの:
+REQUIMENT:
+
+・DreamCast support MIL-CD
+・Broad Band Adapter
+  http://www3.csi-msp.com/dcweb/
+・dc-load-ip
+　http://www.cerc.utexas.edu/~andrewk/dc/
+・CD-R writting soft
+
+
+準備:
+
+andrewkのページからdcload-ipを落とす。
+download dc-load-ip at:
+http://www.cerc.utexas.edu/~andrewk/dc/
+
+PC側のツールは
+PC side tool:
+ dc-tool-ip-1.0.0-win32.zip
+ dlls.zip (cygwin dll)
+
+dreamripと同じ場所に展開
+extract at same directory with drieamrip
+
+dreamrip.bat
+	dc-tool -t 192.168.0.100 -x dreamrip.bin
+                   -------------
+　をDreamCastのIPアドレスに書き換える（以下、192.168.0.100とする）
+  modify underline to DreamCast IP Address (in this case, 192.168.0.100)
+
+DiskJuggler2 image: dcload-ip-100-0.0.0.0-dj2.zip
+
+00169afc "000.000.000."
+00169ba0 "000"
+
+Nero image : dcload-ip-100-0.0.0.0-nero.zip
+
+0011423c "000.000.000."
+001142e0 "000"
+
+1ST_READ_BIN (scrambbled)
+
+000040d0 "000.000.000."
+00004180 "000"
+
+を
+
+"192.168.000" "100"
+
+等、DCのIPアドレスにバイナリエディタで書き換えて焼きます。
+modify DreamCast IP address using binary editor and burn.
+
+
+DCのIPアドレスの決め方
+DreamCast IP Adderess:
+
+[既にLANがある場合(ダイヤルアップルータ等を使っている場合)]
+if you use LAN
+
+自分のマシンのIPアドレスは、Win9xではGUIの"winipcfg"、Win2000ではコマンドラインの"ipconfig"で知ることができます。
+look your PC IP address using "winipcfg"(Win9x) or "ipconfig"(Win2000)
+
+Win9x: [スタート]-[ファイル名を指定して実行]で"winipcfg"
+Win2k: [スタート]-[プログラム]-[アクセサリ]-[コマンドプロンプト]で"ipconfig"
+
+ISDNルータの購入時の初期設定では、たいてい192.168.0.x とか 192.168.1.x とかになってると思います。
+
+この192.168.a.xのうち、192.168.a.まで同じで、xが重ならない数字をDreamCastで使います。
+
+自分のマシンが192.168.0.3とかであれば、(多分ルータは前から割り振ってるので)192.168.0.100とかの大きな数字にします。
+if PC's IP address is 192.168.0.3, then use 192.168.0.100 etc.
+
+
+注：「ダイヤルアップコンピュータ」と「ネットワークカード名」の２つが表示される場合、「ネットワークカード名」のほうを参照。
+
+
+[直結する場合]
+
+「ネットワークコンピュータ」(win2000では「マイネットワーク」)の右クリックで「プロパティ」を選び、TCP/IPの設定をします。
+
+「次のIPアドレスを使う」にチェックをつけ、
+192.168.0.1等を入力。
+
+DC側は192.168.0.100等の重ならない数字にする。
+
+
+
+使い方:
+
+1.DreamCastとPCをイーサネットケーブルで接続する
+　HUB(またはルータ)を間に入れる場合ははストレートケーブル、直結する場合はクロスケーブルを使います。
+
+2.DreamCastでdcload-ipのCD-Rを起動する
+	C:\ping 192.168.0.100
+　で返ってきたら接続ok
+
+3. dreamrip.batを実行
+
+4.画面にGD-RONの構成が表示された後、トラックごとに吸います。
+
+5.吸ったイメージの利用方法は、前のバージョンについているツールやドキュメントを利用。
+
+USAGE:
+1. connect DreamCast and PC with ethernet cable
+   if you connect through HUB, use strait cable.
+   if you connect directly, use cross ethernet cable.
+2. boot dc-load-ip CD-R
+3. run dreamrip.bat
+4. display GD-ROM and rip tracks
+5. to use ripped image, please see docs and tools bundled with previous version.
+
+2.0.1: bug fix
+       吸出しが途中で終わることがあるので修正。
